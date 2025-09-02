@@ -1,0 +1,17 @@
+.close {
+	transform: translateY(8px);
+	opacity: 0;
+	transition: opacity 170ms ease-in, transform 170ms ease-in;
+	z-index: 0;
+	visibility: hidden;
+}
+
+.open {
+	opacity: 1;
+	transform: translateY(0);
+	pointer-events: auto;
+	transition: opacity 170ms ease-in, transform 170ms ease-in;
+	/* visibility: hidden; */
+	visibility: visible;
+}
+

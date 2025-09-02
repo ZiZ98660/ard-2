@@ -1,0 +1,83 @@
+@mixin flex($align, $justify, $direction) {
+	display: flex;
+	align-items: $align;
+	justify-content: $justify;
+	flex-direction: $direction;
+}
+@mixin grid($columns, $gap) {
+	display: grid !important;
+	grid-template-columns: $columns !important;
+	grid-gap: $gap !important;
+}
+.grid-custom_1 {
+	@include grid((1fr 3fr), 75px);
+}
+.grid-2 {
+	@include grid(repeat(2, 1fr), 50px);
+}
+.grid-3 {
+	@include grid(repeat(3, 1fr), 50px);
+}
+.grid-4 {
+	@include grid(repeat(4, 1fr), 50px);
+}
+
+.grid-6 {
+	@include grid(repeat(6, 1fr), 30px);
+}
+
+@media screen and (max-width: 1300px) {
+	.grid-3 {
+		@include grid(repeat(2, 1fr), 50px);
+	}
+}
+@media screen and (max-width: 950px) {
+	.grid-custom_1,
+	.grid-6,
+	.grid-4,
+	.grid-3 {
+		@include grid(repeat(2, 1fr), 50px);
+	}
+}
+@media screen and (max-width: 740px) {
+	.grid-custom_1,
+	.grid-2 {
+		@include grid(repeat(1, 1fr), 50px);
+		place-items: center;
+		text-align: center;
+		img {
+			place-self: center;
+		}
+	}
+	.grid-3 {
+		@include grid(repeat(1, 1fr), 50px);
+	}
+	.grid-custom_1 {
+		place-items: center;
+		text-align: center;
+		position: relative;
+		padding-top: 8em !important;
+		margin-top: 10em !important;
+		img {
+			position: absolute;
+			bottom: 13.8em;
+			width: 200px;
+			height: 200px;
+			object-fit: cover;
+		}
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.sass-container {
+		max-width: 100% !important;
+		padding: 0 20px;
+	}
+
+	.grid-2,
+	.grid-3,
+	.grid-6,
+	.grid-4 {
+		@include grid(repeat(1, 1fr), 50px);
+	}
+}
