@@ -21,7 +21,7 @@ const WhatWeDo = () => {
         </div>
         <div className="content flex">
           <div className="left ">
-            <div className="misson-p grid gap-y-6">
+            <div className="misson-p gap-y-6">
               {activities.map((activity, idx) => (
                 <div key={activity.title} className="mb-4">
                   <div className="flex items-center gap-x-2 mb-2">

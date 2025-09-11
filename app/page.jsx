@@ -16,10 +16,10 @@ import FAQs from "@/components/FAQs";
 import Link from "next/link";
 import Testimonial2 from "@/components/Testimonial copy";
 import Form from "@/components/sections/Form";
-import Head from 'next/head';
+import Head from "next/head";
 
 export default function Home() {
-	return (
+  return (
     <>
       <Head>
         <title>
@@ -34,8 +34,8 @@ export default function Home() {
             "radial-gradient(ellipse at top left, rgba(132,90,255,0.1) 0%, rgba(129,212,250,0.1) 40%, #fff 50%, rgba(129,212,250,0.17) 80%, rgba(132,90,255,0.2) 100% )",
         }}
       >
-        <div className=" flex gap-x-8 justify-between items-center h-full !text-left max-800:!grid max-800:!text-center max-800:!place-items-center max-800:!gap-y-8">
-          <div className="pl-12 grid gap-y-4">
+        <div className=" flex  gap-x-8 justify-between items-center h-full !text-left max-800:!grid max-800:!text-center max-800:!place-items-center max-800:!gap-y-8">
+          <div className=" 800:pl-12 sass-container grid gap-y-4">
             <Title
               title="Uniting Resident Doctors, Advancing Healthcare Excellence"
               className={"text-[45px] max-800:!w-full  "}
@@ -90,7 +90,7 @@ export default function Home() {
         </div>
       </section>
       <section className="hero-sec">
-        <div className="sass-container !pb-24">
+        <div className="sass-container pt-5 !pb-24">
           <div className="heading-title !text-3xl !text-dark">
             <div className="flex w-full justify-center">
               <Title className={"text-[37px]"} title="Who we are" />
@@ -112,18 +112,24 @@ export default function Home() {
               </button>
             </div>
           </div>
-          <div className=" ">
-            <div className="grid-2 items-center !pt-10 sass-container">
+          <div className="!pt-5 sass-container ">
+            <div className="flex w-full justify-center">
+              <Title className={"text-[37px]"} title="What we do" />
+            </div>
+            <div className="grid-2 !pt-10  items-center ">
               <img
                 src="/assets/images/header.png"
-                className="w-5/6 h-[28em] object-cover rounded-lg"
-                alt=""
+                className="w-5/6 max-800:w-full h-[28em] object-cover rounded-lg"
+                alt="ARD DELSUTH doctors group"
+                loading="lazy"
+                decoding="async"
+                style={{
+                  filter: "contrast(1.08) brightness(1.04) saturate(1.08)",
+                  imageRendering: "auto",
+                }}
+                // srcSet="/assets/images/header.png 1x, /assets/images/header@2x.png 2x"S
               />
               <div className="w-full">
-                <Title
-                  className="text-[2.2em] font-semibold !py-6"
-                  title="What we do at ARD DELSUTH"
-                />
                 {/*
                   Summarized, elucidated points for the first three activities.
                   Dot color is light indigo (#818cf8).

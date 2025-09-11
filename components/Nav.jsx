@@ -117,11 +117,24 @@ const Nav = () => {
             className=" hidden max-800:block "
             onClick={() => setOpen(!open)}
           >
-            {open ? (
-              <AiOutlineClose fill="black" size={25} />
-            ) : (
-              <RiMenu4Line fill="black" size={25} />
-            )}
+            <span className="relative inline-block w-[25px] h-[25px] transition-all duration-350">
+              <span
+                className={`absolute inset-0 flex items-center justify-center transition-transform duration-350 ${
+                  open ? "opacity-0 scale-90" : "opacity-100 scale-100"
+                }`}
+                style={{ transitionProperty: "opacity, transform" }}
+              >
+                <RiMenu4Line fill="black" size={25} />
+              </span>
+              <span
+                className={`absolute inset-0 flex items-center justify-center transition-transform duration-350 ${
+                  open ? "opacity-100 scale-100" : "opacity-0 scale-90"
+                }`}
+                style={{ transitionProperty: "opacity, transform" }}
+              >
+                <AiOutlineClose fill="black" size={25} />
+              </span>
+            </span>
           </button>
         </div>
       </header>
