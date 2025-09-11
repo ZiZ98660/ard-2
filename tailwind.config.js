@@ -32,9 +32,9 @@ module.exports = {
 				dark: "#373435",
 				light: "#FEFEFE",
 				primary: {
-					100: "#4FB847",
-					200: "#449E3E",
-					300: "#398634",
+					100: "#5eead4", // turquoise-100
+					200: "#2dd4bf", // turquoise-200
+					300: "#14b8a6", // turquoise-300
 				},
 				"green-yellow": "#A8CF45",
 			},

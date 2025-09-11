@@ -5,7 +5,7 @@ const ServicePage = () => {
   return (
     <>
       <Head>
-        <title>Services - Capital Growth Academy</title>
+        <title>Services - ARD DELSUTH</title>
       </Head>
       <Services />
     </>

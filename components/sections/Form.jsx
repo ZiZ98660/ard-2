@@ -4,7 +4,7 @@ import Text from "../Text";
 
 const Form = () => {
 	return (
-		<section className=" !pt-8 !pb-14 border-solid border-b border-[#e5e7eb]">
+		<section className=" !pb-14 border-solid border-b border-[#e5e7eb]">
 			<form id="form_section" className="text-dark sass-container" action="">
 				<div className="!pb-8">
 					<Title className={"!pb-2"} title={"Get more information"} />

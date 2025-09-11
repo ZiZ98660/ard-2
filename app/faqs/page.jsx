@@ -5,7 +5,7 @@ const FAQPage = () => {
   return (
     <>
       <Head>
-        <title>FAQs - Capital Growth Academy</title>
+        <title>FAQs - ARD DELSUTH</title>
       </Head>
       <Faqs />
     </>

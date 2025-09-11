@@ -16,18 +16,18 @@ const Faqs = () => {
           </div>
           <div className='desc'>
             <Text
-            text={`1. What is Capital Growth Academy?`}
+            text={`1. What is ARD DELSUTH?`}
             className={'font-bold !text-lg'}
             />
             <br />
             <p
             className = {'!text-lg'}
             >
-Capital Growth Academy is an educational platform that focuses on teaching business innovation using a combination of standard and creative principles. We offer courses and workshops designed to help both new and existing businesses adapt and thrive in today's dynamic marketplace.            </p>
+ARD DELSUTH is an educational platform that focuses on teaching business innovation using a combination of standard and creative principles. We offer courses and workshops designed to help both new and existing businesses adapt and thrive in today's dynamic marketplace.            </p>
             <br />
             <br />
             <Text
-            text={`2. Who can benefit from Capital Growth Academy's courses?`}
+            text={`2. Who can benefit from ARD DELSUTH's courses?`}
             className={'font-bold !text-lg'}
             />
              <br />
@@ -51,7 +51,7 @@ Our curriculum includes topics such as market research, ideation, product develo
             <br />
             <br />
             <Text
-            text={`4. Who are the instructors at Capital Growth Academy?`}
+            text={`4. Who are the instructors at ARD DELSUTH?`}
             className={'font-bold !text-lg'}
             />
              <br />

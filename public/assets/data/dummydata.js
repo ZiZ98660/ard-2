@@ -314,11 +314,11 @@ export const card_data = [
 
 export const faq_data = [
   {
-    question: 'What is Capital Growth Academy',
-    answer: "Capital Growth Academy is an educational platform that focuses on teaching business innovation using a combination of standard and creative principles. We offer courses and workshops designed to help both new and existing businesses adapt and thrive in today's dynamic marketplace"
+    question: 'What is ARD DELSUTH',
+    answer: "ARD DELSUTH is an educational platform that focuses on teaching business innovation using a combination of standard and creative principles. We offer courses and workshops designed to help both new and existing businesses adapt and thrive in today's dynamic marketplace"
   },
   {
-    question: "Who can benefit from Capital Growth Academy's courses",
+    question: "Who can benefit from ARD DELSUTH's courses",
     answer: 'Our courses are designed to cater to a wide range of individuals, from budding entrepreneurs looking to launch their first venture to established business owners seeking to innovate and revitalize their operations.'
   },
   {
@@ -326,18 +326,79 @@ export const faq_data = [
     answer: 'Our curriculum includes topics such as market research, ideation, product development, marketing strategies, and more. We aim to provide a comprehensive learning experience that addresses the essential aspects of business innovation.'
   },
   {
-    question: 'Who are the instructors at Capital Growth Academy',
+    question: 'Who are the instructors at ARD DELSUTH',
     answer:'Not at all. Our programs are built on whatever your company already has implemented. Since our methods are decentralized and bottom-up, they complement any top-down programs you may already have.'
   }
 ]
 
 export const link = [
   {
-    title: 'KICKBOX',
-    link: '/solutions/kickbox'
+    title: "Who We Are",
+    link: "/about-us/who-we-are",
   },
   {
-    title: 'LEGO® SERIOUS PLAY®',
-    link: '/solutions/lsp'
+    title: "What We Do",
+    link: "/about-us/what-we-do",
   },
-]
+];
+
+export const activities = [
+  {
+    title: "Meetings & Governance",
+    points: [
+      "Three Ordinary General Meetings and one Annual General Meeting are held yearly",
+      "Emergency General Meetings convened as needed",
+      "Foster member engagement, accountability, and decision-making on union matters",
+    ],
+    img: "/assets/images/meetings.jpg",
+  },
+  {
+    title: "Training & Capacity Building",
+    points: [
+      "Drive for departmental accreditation and reaccreditation",
+      "Organise research workshops, mock exams, and journal clubs",
+      "Conduct certified courses in: Basic Surgical Skills, Basic Life Support (BLS), Advanced Cardiac Life Support (ACLS), Paediatric Advanced Life Support (PALS)",
+      "Publish and maintain an online medical journal",
+    ],
+    img: "/assets/images/training.jpg",
+  },
+  {
+    title: "Welfare & Remuneration Advocacy",
+    points: [
+      "Engage with management and government on salary arrears and irregularities",
+      "Launch legal campaigns for fair and timely remuneration",
+      "Advocate for improved health insurance services for doctors",
+      "Lobby for quality call rooms, call meals, and accommodation",
+      "Maintain a well-equipped Secretariat, Lounge, and Recreational Facilities for doctors",
+    ],
+    img: "/assets/images/welfare.jpg",
+  },
+  {
+    title: "Innovation & Infrastructure Development",
+    points: [
+      "Campaign for the acquisition of CT/MRI machines, advanced surgical equipment, and other facilities",
+      "Push for resolution of staffing gaps and infrastructure bottlenecks",
+      "Contribute to hospital policy-making and institutional reform agendas",
+    ],
+    img: "/assets/images/innovation.jpg",
+  },
+  {
+    title: "Partnerships & Community Outreach",
+    points: [
+      "Collaborate with NGOs, government agencies, and international bodies",
+      "Host school, prison, hospital, and rural outreach programs",
+      "Sponsor scientific research and encourage scholarly publications",
+      "Promote alumni engagement and provide structured mentorship for junior doctors",
+    ],
+    img: "/assets/images/outreach.jpg",
+  },
+  {
+    title: "Media Engagement & Public Health Campaigns",
+    points: [
+      "Publish the ARD DELSUTH MedDigest, a biweekly email newsletter for health education and union updates",
+      "Run health awareness campaigns via Twitter, Facebook, television, and radio",
+      "Lead commemorative events like: World Health Day, Breast Cancer Awareness Month, Mental Health Awareness, and other national and global health observances",
+    ],
+    img: "/assets/images/media.jpg",
+  },
+];

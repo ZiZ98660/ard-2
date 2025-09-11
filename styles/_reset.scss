@@ -6,9 +6,15 @@
 }
 body {
   font-family: "Poppins", sans-serif;
-  background-color: $white;
+  background-color: #f2fcfd; // very light turquoise
   color: $dark;
-  background-image: radial-gradient(circle at 50% 50%, rgb(204 255 204 / 23%) 0%, rgb(186 222 114 / 27%) 40%, rgba(255, 255, 229, 0.7) 60%, rgb(255, 255, 255) 80%);
+  background-image: radial-gradient(
+    circle at 50% 50%,
+    rgba(224, 247, 250, 0.12) 0%,    // subtle light turquoise
+    rgba(129, 212, 250, 0.10) 40%,   // more subtle light blue
+    rgba(120, 144, 156, 0.14) 60%,   // more subtle blue-grey
+    rgba(132, 90, 255, 0.15) 80%     // more subtle mid-range indigo
+  );
   background-size: 50% 50%;
   background-position: center;
 

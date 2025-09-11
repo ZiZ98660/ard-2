@@ -19,7 +19,7 @@ const Services = () => {
 							className={"font-bold !text-lg"}
 						/>
 						<p className={"!text-lg"}>
-							At Capital Growth Academy, we offer a diverse range of specialized
+							At ARD DELSUTH, we offer a diverse range of specialized
 							training programs designed to unlock potential and catalyze growth
 							in businesses across Sub-Saharan Africa. Here’s a look at our
 							current offerings:
@@ -103,7 +103,7 @@ const Services = () => {
 							className={"font-bold !text-lg"}
 						/>
 						<p className={"!text-lg"}>
-							Capital Growth Academy is dedicated to providing a wide range of
+							ARD DELSUTH is dedicated to providing a wide range of
 							professional services tailored to enhance the strategic
 							capabilities of businesses in Sub-Saharan Africa. Our services are
 							designed to foster innovation, drive growth, and build strong

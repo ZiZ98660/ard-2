@@ -1,6 +1,6 @@
-# Capital Growth Academy
+# ARD DELSUTH
 
-This is the official web application for Capital Growth Academy, built with [Next.js](https://nextjs.org/).
+This is the official web application for ARD DELSUTH, built with [Next.js](https://nextjs.org/).
 
 ## Getting Started
 
