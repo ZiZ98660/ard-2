@@ -107,9 +107,12 @@ export default function Home() {
                 outstanding residency training, promote efficient hospital
                 operations, and advocate for quality healthcare in Delta State.
               </p>
-              <button className="btn_link max-800:!w-2/3 !py-[10px] !mt-3 !mb-5 text-white bg-primary-100 hover:bg-primary-200 rounded-[2em] !px-[30px]">
+              <Link
+                href="/about-us/who-we-are"
+                className="btn_link max-800:!w-2/3 !py-[10px] !mt-3 !mb-5 text-white bg-primary-100 hover:bg-primary-200 rounded-[2em] !px-[30px]"
+              >
                 Learn more
-              </button>
+              </Link>
             </div>
           </div>
           <div className="!pt-5 sass-container ">
@@ -170,7 +173,7 @@ export default function Home() {
                 })()}
                 <Link
                   className="btn_link max-800:!w-full !py-[10px] !mt-3 !mb-5 text-white bg-primary-100 hover:bg-primary-200 rounded-[2em] !px-[30px]"
-                  href="/about-us"
+                  href="/about-us/what-we-do"
                 >
                   Learn more
                 </Link>
