@@ -10,7 +10,7 @@ const Agency = () => {
       <section className="agency bg-top">
         <div className="sass-container">
           <div className="heading-title">
-            <Title className={"text-[40px]"} title="WHO WE ARE" />
+            <Title className={"text-[32px]"} title="WHO WE ARE" />
           </div>
           <div>
             <Text

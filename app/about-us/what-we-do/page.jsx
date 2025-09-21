@@ -12,11 +12,16 @@ const WhatWeDo = () => {
       </Head>
       <section className="sass-container agency bg-top pb-10 ">
         <div className="heading-title">
-          <Title title="ACTIVITIES OF ARD DELSUTH" />
+          <Title className={"text-[32px]"} title="ACTIVITIES OF ARD DELSUTH" />
         </div>
         <div>
           <p className="text-center !text-lg mb-8">
-            ARD DELSUTH advances the welfare and professional growth of doctors at Delta State University Teaching Hospital through regular meetings, training, and advocacy. The association drives innovation, supports community outreach, and promotes public health via education and media campaigns, all aimed at strengthening healthcare delivery and supporting its members.
+            ARD DELSUTH advances the welfare and professional growth of doctors
+            at Delta State University Teaching Hospital through regular
+            meetings, training, and advocacy. The association drives innovation,
+            supports community outreach, and promotes public health via
+            education and media campaigns, all aimed at strengthening healthcare
+            delivery and supporting its members.
           </p>
         </div>
         <div className=" ">
