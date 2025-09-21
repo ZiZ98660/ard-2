@@ -28,7 +28,7 @@ export default function Home() {
         </title>
       </Head>
       <section
-        className="h-[85vh] relative opacity-[.96]"
+        className="!h-[85vh] relative opacity-[.96]"
         style={{
           background:
             "radial-gradient(ellipse at top left, rgba(132,90,255,0.1) 0%, rgba(129,212,250,0.1) 40%, #fff 50%, rgba(129,212,250,0.17) 80%, rgba(132,90,255,0.2) 100% )",
@@ -90,7 +90,7 @@ export default function Home() {
         </div>
       </section>
       <section className="hero-sec">
-        <div className="sass-container pt-14 max-800:pt-12 !pb-14">
+        <div className="sass-container !pt-14 max-800:!pt-12 !pb-14">
           <div className="max-800:text-center max-800:mx-auto !text-3xl !text-dark">
             <div className="flex w-full justify-center">
               <Title className={"text-[40px]"} title="Who we are" />
@@ -109,7 +109,7 @@ export default function Home() {
               </p>
               <Link
                 href="/about-us/who-we-are"
-                className=" justify-center max-800:!w-2/3 !py-[10px] !mt-3 !mb-5 text-white bg-primary-100 hover:bg-primary-200 rounded-[2em] !px-[30px]"
+                className=" justify-center max-800:!w-2/3 !py-[10px] !mt-3 !mb-5 !text-white bg-primary-100 hover:bg-primary-200 rounded-[2em] !px-[30px]"
               >
                 Learn more
               </Link>
@@ -122,7 +122,7 @@ export default function Home() {
             <div className="grid-footer !pt-6 ">
               <img
                 src="/assets/images/header.png"
-                className=" max-800:w-full h-[28em] object-cover rounded-lg"
+                className=" w-full max-800:w-full h-[28em] object-cover rounded-lg"
                 alt="ARD DELSUTH doctors group"
                 loading="lazy"
                 decoding="async"
@@ -154,7 +154,7 @@ export default function Home() {
                   return (
                     <div className="space-y-8 !mb-8">
                       {summarizedPoints.map(({ title, summary }, idx) => (
-                        <div key={title} className="flex items-start gap-x-4">
+                        <div key={title} className="flex !items-start gap-x-4">
                           <span className="flex-shrink-0 mt-2.5">
                             <DotIcon color="#818cf8" className="w-2 h-2" />
                           </span>
@@ -169,7 +169,7 @@ export default function Home() {
                 })()}
                 <div className="max-800:mx-auto max-800:text-center">
                   <Link
-                    className="btn_link max-800:!w-full !py-[10px] !mt-3 !mb-5 text-white bg-primary-100 hover:bg-primary-200 rounded-[2em] !px-[30px]"
+                    className="btn_link max-800:!w-full !py-[10px] !mt-3 !mb-5 !text-white bg-primary-100 hover:bg-primary-200 rounded-[2em] !px-[30px]"
                     href="/about-us/what-we-do"
                   >
                     Learn more
