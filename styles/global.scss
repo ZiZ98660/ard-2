@@ -21,7 +21,7 @@
 		justify-content: center;
 		color: #b5ffc7;
 		.titleSm {
-			margin: 0 $xl-1;
+			margin: 0 30px;
 		}
 		span {
 			font-size: $xll;
@@ -181,7 +181,7 @@
 // footer
 footer {
 	position: relative;
-	padding: $xll-3 0 0 0;
+	padding: 50px 0 0 0;
 	border-top: 1px solid rgb(88 116 81 / 12%);
 	overflow: hidden;
 	.logobg {
@@ -205,7 +205,7 @@ footer {
 		margin-bottom: $xl-2;
 		display: block;
 		&:hover {
-			color: $green;
+			color: #3ec9b9; // light turquoise
 		}
 	}
 	.connect {

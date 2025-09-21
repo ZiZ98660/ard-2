@@ -6,7 +6,7 @@ import { HiOutlineArrowRight } from "react-icons/hi";
 import Image from "next/image";
 import Text from "./Text";
 import { FaArrowRight, FaCaretDown, FaCaretUp } from "react-icons/fa";
-import { useEffect, useState } from "react";
+import { useRef, useEffect, useState } from "react";
 
 export const Card = ({ data, caption, show, path }) => {
 	return (
@@ -141,11 +141,24 @@ export const TestimonialCard = ({
 	);
 };
 
+
+
 export const FAQCard = ({ question, answer, isOpen, onClick }) => {
+	const contentRef = useRef(null);
+	const [height, setHeight] = useState(0);
+
+	useEffect(() => {
+		if (isOpen && contentRef.current) {
+			setHeight(contentRef.current.scrollHeight);
+		} else {
+			setHeight(0);
+		}
+	}, [isOpen, answer]);
+
 	return (
 		<div
 			className={`p-4 !mb-4 ease-in-out duration-200 bg-[#eef9edf4] rounded-lg ${
-				isOpen ? "grid  gap-y-2" : ""
+				isOpen ? "grid gap-y-2" : ""
 			}`}
 		>
 			<div
@@ -156,15 +169,17 @@ export const FAQCard = ({ question, answer, isOpen, onClick }) => {
 				{isOpen ? <FaCaretUp /> : <FaCaretDown />}
 			</div>
 			<div
-				className={`transition-all duration-500 overflow-hidden ${
-					isOpen ? 'max-h-40 opacity-100' : 'max-h-0 opacity-0'
-				}`}
+				ref={contentRef}
+				style={{
+					maxHeight: `${height}px`,
+					opacity: isOpen ? 1 : 0,
+					transition: "max-height 0.3s cubic-bezier(0.4,0,0.2,1), opacity 0.2s"
+				}}
+				className="overflow-hidden"
 			>
-				{isOpen && (
-					<div>
-						<Text className={""} text={answer} />
-					</div>
-				)}
+				<div>
+					<Text className={""} text={answer} />
+				</div>
 			</div>
 		</div>
 	);

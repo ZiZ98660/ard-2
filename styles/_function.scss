@@ -19,6 +19,9 @@
 .grid-2 {
 	@include grid(repeat(2, 1fr), 50px);
 }
+.grid-footer {
+	@include grid((40% 60%), 50px);
+}
 .grid-3 {
 	@include grid(repeat(3, 1fr), 50px);
 }
@@ -46,7 +49,6 @@
 }
 @media screen and (max-width: 740px) {
 	.grid-custom_1,
-	.grid-custom_2
 	.grid-2 {
 		@include grid(repeat(1, 1fr), 50px);
 		place-items: center;
@@ -55,8 +57,13 @@
 			place-self: center;
 		}
 	}
+	.grid-footer,
+	.grid-custom_2,
 	.grid-3 {
 		@include grid(repeat(1, 1fr), 50px);
+		img{
+			place-self: center;
+		}
 	}
 	.grid-custom_1 {
 		place-items: center;
@@ -81,6 +88,7 @@
 	}
 
 	.grid-2,
+	.grid-footer
 	.grid-3,
 	.grid-6,
 	.grid-4 {

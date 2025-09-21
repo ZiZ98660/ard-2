@@ -90,39 +90,39 @@ export default function Home() {
         </div>
       </section>
       <section className="hero-sec">
-        <div className="sass-container pt-5 !pb-24">
-          <div className="heading-title !text-3xl !text-dark">
+        <div className="sass-container pt-14 max-800:pt-12 !pb-14">
+          <div className="max-800:text-center max-800:mx-auto !text-3xl !text-dark">
             <div className="flex w-full justify-center">
-              <Title className={"text-[37px]"} title="Who we are" />
+              <Title className={"text-[40px]"} title="Who we are" />
             </div>
-            <div className="!pt-10 max-w-3xl mx-auto text-lg text-gray-800 leading-relaxed">
+            <div className="!pt-6 max-800-max-w-3xl max-800:mx-auto text-lg text-gray-800 leading-relaxed">
               <p className="mb-4">
                 The Association of Resident Doctors (ARD) at Delta State
                 University Teaching Hospital (DELSUTH) unites doctors in
                 residency training, along with other doctors of similar ranks
                 and house officers.
               </p>
-              <p className="mb-4">
+              <p className="mb-8">
                 Our mission is to advance the welfare of doctors, uphold
                 outstanding residency training, promote efficient hospital
                 operations, and advocate for quality healthcare in Delta State.
               </p>
               <Link
                 href="/about-us/who-we-are"
-                className="btn_link max-800:!w-2/3 !py-[10px] !mt-3 !mb-5 text-white bg-primary-100 hover:bg-primary-200 rounded-[2em] !px-[30px]"
+                className=" justify-center max-800:!w-2/3 !py-[10px] !mt-3 !mb-5 text-white bg-primary-100 hover:bg-primary-200 rounded-[2em] !px-[30px]"
               >
                 Learn more
               </Link>
             </div>
           </div>
-          <div className="!pt-5 sass-container ">
+          <div className="!pt-10 sass-container ">
             <div className="flex w-full justify-center">
-              <Title className={"text-[37px]"} title="What we do" />
+              <Title className={"text-[40px] text-black"} title="What we do" />
             </div>
-            <div className="grid-2 !pt-10  items-center ">
+            <div className="grid-footer !pt-6 ">
               <img
                 src="/assets/images/header.png"
-                className="w-5/6 max-800:w-full h-[28em] object-cover rounded-lg"
+                className=" max-800:w-full h-[28em] object-cover rounded-lg"
                 alt="ARD DELSUTH doctors group"
                 loading="lazy"
                 decoding="async"
@@ -133,10 +133,6 @@ export default function Home() {
                 // srcSet="/assets/images/header.png 1x, /assets/images/header@2x.png 2x"S
               />
               <div className="w-full">
-                {/*
-                  Summarized, elucidated points for the first three activities.
-                  Dot color is light indigo (#818cf8).
-                */}
                 {(() => {
                   const summarizedPoints = [
                     {
@@ -156,7 +152,7 @@ export default function Home() {
                     },
                   ];
                   return (
-                    <div className="space-y-8 !mb-10">
+                    <div className="space-y-8 !mb-8">
                       {summarizedPoints.map(({ title, summary }, idx) => (
                         <div key={title} className="flex items-start gap-x-4">
                           <span className="flex-shrink-0 mt-2.5">
@@ -171,12 +167,14 @@ export default function Home() {
                     </div>
                   );
                 })()}
-                <Link
-                  className="btn_link max-800:!w-full !py-[10px] !mt-3 !mb-5 text-white bg-primary-100 hover:bg-primary-200 rounded-[2em] !px-[30px]"
-                  href="/about-us/what-we-do"
-                >
-                  Learn more
-                </Link>
+                <div className="max-800:mx-auto max-800:text-center">
+                  <Link
+                    className="btn_link max-800:!w-full !py-[10px] !mt-3 !mb-5 text-white bg-primary-100 hover:bg-primary-200 rounded-[2em] !px-[30px]"
+                    href="/about-us/what-we-do"
+                  >
+                    Learn more
+                  </Link>
+                </div>
               </div>
             </div>
           </div>

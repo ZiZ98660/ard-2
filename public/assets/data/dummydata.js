@@ -314,22 +314,36 @@ export const card_data = [
 
 export const faq_data = [
   {
-    question: 'What is ARD DELSUTH',
-    answer: "ARD DELSUTH is an educational platform that focuses on teaching business innovation using a combination of standard and creative principles. We offer courses and workshops designed to help both new and existing businesses adapt and thrive in today's dynamic marketplace"
+    question: "What is ARD DELSUTH?",
+    answer:
+      "ARD DELSUTH is the association of resident doctors and house officers at Delta State University Teaching Hospital. We focus on doctors' welfare, quality training, efficient hospital operations, and better healthcare in Delta State. We are part of NARD and affiliated with the NMA."
   },
   {
-    question: "Who can benefit from ARD DELSUTH's courses",
-    answer: 'Our courses are designed to cater to a wide range of individuals, from budding entrepreneurs looking to launch their first venture to established business owners seeking to innovate and revitalize their operations.'
+    question: "What is the mission of ARD DELSUTH?",
+    answer:
+      "To promote doctors' welfare, high-quality residency training, efficient hospital operations, and improved healthcare in Delta State."
   },
   {
-    question: 'What topics do your courses cover',
-    answer: 'Our curriculum includes topics such as market research, ideation, product development, marketing strategies, and more. We aim to provide a comprehensive learning experience that addresses the essential aspects of business innovation.'
+    question: "What are the main activities of ARD DELSUTH?",
+    answer:
+      "We hold regular meetings, support departmental accreditation, organize research and training events, run certified courses, publish a medical journal, advocate for welfare and better facilities, and contribute to hospital policy."
   },
   {
-    question: 'Who are the instructors at ARD DELSUTH',
-    answer:'Not at all. Our programs are built on whatever your company already has implemented. Since our methods are decentralized and bottom-up, they complement any top-down programs you may already have.'
+    question: "What is ARD DELSUTH's approach to innovation and infrastructure development?",
+    answer:
+      "We advocate for new medical equipment, address staffing and infrastructure issues, and help shape hospital policies and reforms."
+  },
+  {
+    question: "Who can join ARD DELSUTH?",
+    answer:
+      "All resident doctors and house officers at DELSUTH are eligible to join."
+  },
+  {
+    question: "What affiliations does ARD DELSUTH have?",
+    answer:
+      "We are a chapter of NARD and affiliated with the NMA."
   }
-]
+];
 
 export const link = [
   {
@@ -402,3 +416,47 @@ export const activities = [
     img: "/assets/images/media.jpg",
   },
 ];
+
+// export const faq_data = [
+//   {
+//     question: "What is ARD DELSUTH?",
+//     answer:
+//       "The Association of Resident Doctors (ARD) at Delta State University Teaching Hospital (DELSUTH) unites doctors in residency training, along with other doctors of similar ranks and house officers. Our mission is to advance the welfare of doctors, uphold outstanding residency training, promote efficient hospital operations, and advocate for quality healthcare in Delta State. We are a chapter of the Nigerian Association of Resident Doctors (NARD) and are proudly affiliated with the Nigerian Medical Association (NMA).",
+//   },
+//   {
+//     question: "What is the mission of ARD DELSUTH?",
+//     answer:
+//       "To advance the welfare of doctors, uphold outstanding residency training, promote efficient hospital operations, and advocate for quality healthcare in Delta State.",
+//   },
+//   {
+//     question: "What are the main activities of ARD DELSUTH?",
+//     answer:
+//       "Our activities include: \n- Organizing Ordinary and Annual General Meetings, as well as Emergency General Meetings as needed\n- Driving departmental accreditation and reaccreditation\n- Organizing research workshops, mock exams, and journal clubs\n- Conducting certified courses such as Basic Surgical Skills, BLS, ACLS, and PALS\n- Publishing and maintaining an online medical journal\n- Advocating for welfare and remuneration, including salary arrears, health insurance, and improved facilities\n- Campaigning for acquisition of advanced medical equipment and infrastructure improvements\n- Contributing to hospital policy-making and institutional reforms",
+//   },
+//   // {
+//   //   question: "How does ARD DELSUTH support the welfare of its members?",
+//   //   answer:
+//   //     "We engage with management and government on salary arrears and irregularities, launch legal campaigns for fair and timely remuneration, advocate for improved health insurance services, lobby for quality call rooms and meals, and maintain a well-equipped Secretariat, Lounge, and Recreational Facilities for doctors."
+//   // },
+//   // {
+//   //   question: "How does ARD DELSUTH contribute to training and capacity building?",
+//   //   answer:
+//   //     "We drive departmental accreditation and reaccreditation, organize research workshops, mock exams, and journal clubs, conduct certified courses in Basic Surgical Skills, Basic Life Support (BLS), Advanced Cardiac Life Support (ACLS), and Paediatric Advanced Life Support (PALS), and publish and maintain an online medical journal."
+//   // },
+//   {
+//     question:
+//       "What is ARD DELSUTH's approach to innovation and infrastructure development?",
+//     answer:
+//       "We campaign for the acquisition of CT/MRI machines, advanced surgical equipment, and other facilities, push for resolution of staffing gaps and infrastructure bottlenecks, and contribute to hospital policy-making and institutional reform agendas.",
+//   },
+//   {
+//     question: "Who can join ARD DELSUTH?",
+//     answer:
+//       "All resident doctors and house officers at Delta State University Teaching Hospital are welcome to join ARD DELSUTH and participate in our mission to improve health and training outcomes for all.",
+//   },
+//   {
+//     question: "What affiliations does ARD DELSUTH have?",
+//     answer:
+//       "We are a chapter of the Nigerian Association of Resident Doctors (NARD) and are proudly affiliated with the Nigerian Medical Association (NMA).",
+//   },
+// ];

@@ -11,21 +11,22 @@ import {
 	AiFillTwitterSquare,
 } from "react-icons/ai";
 import { FaMapMarkerAlt, FaPhone, FaEnvelope, FaPinterestSquare } from "react-icons/fa";
+import { MailIcon, PinterestIcon, TwitterIcon } from "@/public/assets/icons/icons";
 
 const Footer = () => {
 	return (
     <>
       <footer className="bg-[#c6c6f7d2]">
         <div className="sass-container  ">
-          <div className="grid-4">
+          <div className="grid-footer">
             <div className="logo">
               <img
                 src={"/assets/images/logo.png"}
-                className="w-[3.5em] !mx-auto !mb-4"
+                className="w-[6em]"
                 alt="ard delsuth"
               />
-              <div className=" !pt-24 justify-center">
-                <span className={"!text-dark !text-center !text-[16px] pb-5"}>
+              <div className="justify-center">
+                {/* <span className={"!text-dark !text-center !text-[16px] pb-5"}>
                   CONTACT:
                 </span>
                 <div className="flex gap-x-2 items-center">
@@ -33,75 +34,90 @@ const Footer = () => {
                   <span className={"!text-dark !text-center !text-sm"}>
                     +234-902-228-5878
                   </span>
-                </div>
-                <span className={"!text-dark !text-center !text-[16px] py-5"}>
-                  SOCIAL:
+                </div> */}
+                <span
+                  className={
+                    "!text-dark !text-center underline !text-[14px] py-5"
+                  }
+                >
+                  GET IN TOUCH
                 </span>
                 <div className="flex gap-x-2 ">
                   <div>
                     <Link href="http://x.com/ard_delsuth">
-                      <AiFillTwitterSquare size={40} className="rounded-lg" />
+                      <TwitterIcon className=" size-8" />
                     </Link>
                   </div>
                   <div>
                     <Link href="sec.arddelsuth@gmail.com">
-                      <AiFillMail size={40} className="rounded-lg" />
+                      <MailIcon className=" size-8" />
                     </Link>
                   </div>
                   <div>
                     <Link href="http://pinterest.com/arddelsuth">
-                      <FaPinterestSquare size={40} className="rounded-lg" />
+                      <PinterestIcon className=" size-8" />
                     </Link>
                   </div>
                 </div>
               </div>
             </div>
-            <ul>
-              <h3>Useful Links</h3>
-              <li>
-                <Link href="/membership">Membership</Link>
-              </li>
-              <li>
-                <Link href="/">Consultancy</Link>
-              </li>
-            </ul>
-            <ul>
-              <h3>Resources</h3>
-              <li>
-                <Link href="/events">Events</Link>
-              </li>
-              <li>
-                <Link href="/">News</Link>
-              </li>
-              <li>
-                <Link href="/">Webinars</Link>
-              </li>
-              <li>
-                <Link href="/">Testimonials</Link>
-              </li>
-            </ul>
-            <ul>
-              <h3>About ARD DELSUTH</h3>
-              <li>
-                <Link href="/about-us/who-we-are">Who we are</Link>
-              </li>
-              <li>
-                <Link href="/about-us/what-we-do">What we do</Link>
-              </li>
-              <li>
-                <Link href="/">Open positions</Link>
-              </li>
-              <li>
-                <Link href="/faqs">FAQs</Link>
-              </li>
-              <li>
-                <Link href="/">Contact Us</Link>
-              </li>
-            </ul>
+            <div className="grid-3">
+              <ul>
+                <h3>About ARD DELSUTH</h3>
+                <li>
+                  <Link href="/about-us/who-we-are">Who we are</Link>
+                </li>
+                <li>
+                  <Link href="/about-us/what-we-do">What we do</Link>
+                </li>
+                <li>
+                  <Link href="/">Open positions</Link>
+                </li>
+                <li>
+                  <Link href="/faqs">FAQs</Link>
+                </li>
+                <li>
+                  <Link href="/">Contact Us</Link>
+                </li>
+              </ul>
+              <ul>
+                <h3>Resources</h3>
+                <li>
+                  <Link href="/events">Events</Link>
+                </li>
+                <li>
+                  <Link href="/">News</Link>
+                </li>
+                <li>
+                  <Link href="/">Webinars</Link>
+                </li>
+                <li>
+                  <Link href="/">Testimonials</Link>
+                </li>
+              </ul>
+              <ul>
+                <h3>Useful Links</h3>
+                <li>
+                  <Link href="/membership">Membership</Link>
+                </li>
+                <li>
+                  <Link href="/">Consultancy</Link>
+                </li>
+              </ul>
+            </div>
           </div>
           <div className="legal  grid-2 py">
             <div className="text">
               <span>© 2025 ALL RIGHTS RESERVED.</span>
+              <div className="">
+                <img
+                  className=""
+                  loading="lazy"
+                  src={"/assets/images/Momentum.png"}
+                  alt=""
+                />
+                <span>Powered by Momentum Healthcare Services</span>
+              </div>
             </div>
             <div className="connect">
               <span>
