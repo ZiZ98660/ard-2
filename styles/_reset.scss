@@ -10,10 +10,10 @@ body {
   color: $dark;
   background-image: radial-gradient(
     circle at 50% 50%,
-    rgba(224, 247, 250, 0.12) 0%,    // subtle light turquoise
-    rgba(129, 212, 250, 0.10) 40%,   // more subtle light blue
-    rgba(120, 144, 156, 0.14) 60%,   // more subtle blue-grey
-    rgba(132, 90, 255, 0.15) 80%     // more subtle mid-range indigo
+    rgba(224, 247, 250, 0.08) 0%,    // subtle light turquoise
+    rgba(129, 212, 250, 0.08) 40%,   // more subtle light blue
+    rgba(120, 144, 156, 0.09) 60%,   // more subtle blue-grey
+    rgba(132, 90, 255, 0.10) 80%     // more subtle mid-range indigo
   );
   background-size: 50% 50%;
   background-position: center;

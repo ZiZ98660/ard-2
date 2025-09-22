@@ -157,7 +157,7 @@ export const FAQCard = ({ question, answer, isOpen, onClick }) => {
 
 	return (
 		<div
-			className={`p-4 !mb-4 ease-in-out duration-200 bg-[#eef9edf4] rounded-lg ${
+			className={`p-4 !mb-4 ease-in-out duration-200 bg-[#e9f5fff4] rounded-lg ${
 				isOpen ? "grid gap-y-2" : ""
 			}`}
 		>

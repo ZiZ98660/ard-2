@@ -418,6 +418,7 @@ export const activities = [
 ];
 
 // export const faq_data = [
+
 //   {
 //     question: "What is ARD DELSUTH?",
 //     answer:
@@ -460,3 +461,55 @@ export const activities = [
 //       "We are a chapter of the Nigerian Association of Resident Doctors (NARD) and are proudly affiliated with the Nigerian Medical Association (NMA).",
 //   },
 // ];
+
+
+export const activities2 = [
+  {
+    icon: "mdi:calendar-month-outline",
+    color: "#2563eb", // blue-600
+    bg: "#dbeafe",    // blue-100
+    title: "Meetings & Governance",
+    desc: "Three Ordinary General Meetings and one Annual General Meeting yearly. Emergency General Meetings as needed to foster member engagement and decision-making.",
+    delay: 100,
+  },
+  {
+    icon: "mdi:book-open-variant",
+    color: "#ea580c", // orange-600
+    bg: "#ffedd5",    // orange-100
+    title: "Training & Capacity Building",
+    desc: "Research workshops, mock exams, journal clubs, and certified courses including BLS, ACLS, PALS. Maintain an online medical journal.",
+    delay: 200,
+  },
+  {
+    icon: "mdi:heart-outline",
+    color: "#16a34a", // green-600
+    bg: "#bbf7d0",    // green-100
+    title: "Welfare & Remuneration",
+    desc: "Advocate for fair remuneration, improved health insurance, quality call rooms and meals. Maintain recreational facilities for doctors.",
+    delay: 300,
+  },
+  {
+    icon: "mdi:cpu-64-bit",
+    color: "#9333ea", // purple-600
+    bg: "#f3e8ff",    // purple-100
+    title: "Innovation & Infrastructure",
+    desc: "Campaign for advanced medical equipment and resolution of staffing gaps. Contribute to hospital policy-making and reform.",
+    delay: 100,
+  },
+  {
+    icon: "mdi:account-group-outline",
+    color: "#ca8a04", // yellow-600
+    bg: "#fef9c3",    // yellow-100
+    title: "Community Outreach",
+    desc: "Collaborate with NGOs and government agencies. Host school, prison, and rural outreach programs. Promote alumni engagement.",
+    delay: 200,
+  },
+  {
+    icon: "mdi:radio",
+    color: "#dc2626", // red-600
+    bg: "#fee2e2",    // red-100
+    title: "Media & Public Health",
+    desc: "Publish ARD DELSUTH MedDigest newsletter. Run health awareness campaigns and lead commemorative health events.",
+    delay: 300,
+  },
+];
