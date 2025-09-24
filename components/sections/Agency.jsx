@@ -25,7 +25,7 @@ const Agency = () => {
             <div className="left sass-w-60">
               <TitleSm title="Our Mission" />
               <br />
-              <p className="misson-p">
+              <p className="misson-p ">
                 To advance the welfare of doctors, uphold outstanding residency
                 training, promote efficient hospital operations, and advocate
                 for quality healthcare in Delta State.

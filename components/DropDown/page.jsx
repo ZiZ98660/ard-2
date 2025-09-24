@@ -1,19 +1,40 @@
 "use client";
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import styles from "./dropDown.module.css";
 import Link from "next/link";
-
 /**
  * DropDown component
  * @param {Object} props
  * @param {boolean} props.isOpen - Whether the dropdown is open
- * @param {function} props.onClose - Function to call on mouse leave
+ * @param {function} props.onClose - Function to call on mouse leave or outside click
  * @param {function} props.closeNav - Function to call on link click
  * @param {Array<{ title: string, link: string }>} props.options - Array of dropdown options
  */
 const DropDown = ({ isOpen, onClose, closeNav, options = [] }) => {
+  const dropdownRef = useRef(null);
+
+  useEffect(() => {
+    if (!isOpen) return;
+
+    function handleClickOutside(event) {
+      if (
+        dropdownRef.current &&
+        !dropdownRef.current.contains(event.target)
+      ) {
+        onClose?.();
+      }
+    }
+
+    document.addEventListener("mousedown", handleClickOutside, true);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside, true);
+    };
+  }, [isOpen, onClose]);
+
   return (
     <div
+      ref={dropdownRef}
       className={`bg-[#effbf3] absolute rounded-md hover:rounded-md top-[1.9em] z-[11] min-w-full] w-max ${
         isOpen ? styles.open : styles.close
       } `}

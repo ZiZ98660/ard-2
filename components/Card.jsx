@@ -143,6 +143,7 @@ export const TestimonialCard = ({
 
 
 
+
 export const FAQCard = ({ question, answer, isOpen, onClick }) => {
 	const contentRef = useRef(null);
 	const [height, setHeight] = useState(0);
@@ -157,7 +158,7 @@ export const FAQCard = ({ question, answer, isOpen, onClick }) => {
 
 	return (
 		<div
-			className={`p-4 !mb-4 ease-in-out duration-200 bg-[#e9f5fff4] rounded-lg ${
+			className={`p-4 !mb-4 ease-in-out duration-200 card-hover bg-[#f0f7fcf4] rounded-lg ${
 				isOpen ? "grid gap-y-2" : ""
 			}`}
 		>

@@ -19,9 +19,8 @@ import Form from "@/components/sections/Form";
 import Head from "next/head";
 import { motion, AnimatePresence } from "framer-motion";
 import smoothscroll from "smoothscroll-polyfill";
-import "aos/dist/aos.css";
-import AOS from "aos";
 import { Icon } from "@iconify/react";
+import Execs, { fadeUp } from "@/components/sections/Execs";
 
 
 
@@ -67,25 +66,13 @@ export default function Home() {
                 Advancing medical excellence, welfare, and healthcare in Delta
                 State.
               </motion.p>
-              <motion.div
+              {/* <motion.div
                 className="flex space-x-4"
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.5, duration: 0.7, ease: "easeOut" }}
               >
-                <a
-                  href="#about"
-                  className="bg-white text-blue-600 px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition-all"
-                >
-                  Learn More
-                </a>
-                <a
-                  href="#contact"
-                  className="border-2 border-white px-6 py-3 rounded-lg font-medium hover:bg-white hover:text-blue-600 transition-all"
-                >
-                  Contact Us
-                </a>
-              </motion.div>
+              </motion.div> */}
             </motion.div>
             <motion.div
               className="hidden md:block md:w-1/2 h-full"
@@ -125,7 +112,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section id="about" className="py-16">
+      <section id="about" className="py-14">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <motion.h2
@@ -239,9 +226,23 @@ export default function Home() {
               </motion.div>
             </motion.div>
           </div>
+          <motion.div
+            className="text-center !mt-9 block mx-auto "
+            variants={fadeUp}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+          >
+            <Link
+              href={"/about-us/who-we-are"}
+              className="btn_link max-800:!w-full !py-[10px] !mt-3 !mb-5 !text-white bg-primary-100 hover:bg-primary-200 rounded-[2em] !px-[30px]"
+            >
+              Learn More
+            </Link>
+          </motion.div>
         </div>
       </section>
-      <section id="activities" className="py-16">
+      <section id="activities" className="pb-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             className="text-center mb-12"
@@ -261,18 +262,18 @@ export default function Home() {
           </motion.div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {activities2.map((act, i) => (
-              <div
+              <motion.div
                 key={act.desc}
-                className="bg-white p-6 rounded-lg shadow-md card-hover transition-all"
-                // initial={{ opacity: 0, y: 40 }}
-                // whileInView={{ opacity: 1, y: 0 }}
-                // transition={{ duration: 0.5, delay: act.delay/1000 }}
-                // viewport={{ once: true }}
+                className="bg-white p-6  rounded-lg shadow-md card-hover transition-all"
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: act.delay/1000 }}
+                viewport={{ once: true }}
               >
                 <div
                   className={`  w-12 h-12 rounded-full flex items-center justify-center mb-4 `}
                   style={{
-                    background: `${act.bg}`
+                    background: `${act.bg}`,
                   }}
                 >
                   <Icon
@@ -286,12 +287,26 @@ export default function Home() {
                   {act.title}
                 </h3>
                 <p className="text-gray-700">{act.desc}</p>
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>
+        <motion.div
+          className="text-center !mt-12 block mx-auto "
+          variants={fadeUp}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+        >
+          <Link
+            href={"/about-us/what-we-do"}
+            className="btn_link max-800:!w-full !py-[10px] !mt-3 !mb-5 !text-white bg-primary-100 hover:bg-primary-200 rounded-[2em] !px-[30px]"
+          >
+            Learn More
+          </Link>
+        </motion.div>
       </section>
-
+      <Execs />
       {/* <Banner /> */}
       {/* <ShowCase /> */}
       <Form />

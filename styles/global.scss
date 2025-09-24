@@ -205,7 +205,7 @@ footer {
 		margin-bottom: $xl-2;
 		display: block;
 		&:hover {
-			color: #3ec9b9; // light turquoise
+			color: #3ea8c9; // light turquoise
 		}
 	}
 	.connect {
@@ -213,6 +213,7 @@ footer {
 		span {
 			font-size: 10px;
 			letter-spacing: 2px;
+			color: #21212585;
 		}
 	}
 	&::after {

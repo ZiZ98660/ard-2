@@ -348,11 +348,11 @@ export const faq_data = [
 export const link = [
   {
     title: "Who We Are",
-    link: "/about-us/who-we-are",
+    link: "#about"
   },
   {
     title: "What We Do",
-    link: "/about-us/what-we-do",
+    link: "#activities"
   },
 ];
 
@@ -511,5 +511,113 @@ export const activities2 = [
     title: "Media & Public Health",
     desc: "Publish ARD DELSUTH MedDigest newsletter. Run health awareness campaigns and lead commemorative health events.",
     delay: 300,
+  },
+];
+
+
+export const EXECUTIVES = [
+  {
+    name: "Dr Oghenetega David Ejeheri",
+    role: "PRESIDENT",
+    dept: "Dept. of Surgery",
+    phone: "+234-803-426-3408",
+    email: "ejeheritega@gmail.com",
+    img: "http://static.photos/people/200x200/1",
+  },
+  {
+    name: "Dr Eseoghene Deborah Etetafia",
+    role: "VICE PRESIDENT",
+    dept: "Dept. of Oral & Maxillofacial Surgery",
+    phone: "+234-810-937-8371",
+    email: "esedebby2@gmail.com",
+    img: "http://static.photos/people/200x200/2",
+  },
+  {
+    name: "Dr Aghogho Ufomata Isaac",
+    role: "GENERAL SECRETARY",
+    dept: "Dept. of Anaesthesia & Intensive Care",
+    phone: "+234-816-910-6477",
+    email: "meastrodr26@gmail.com",
+    img: "http://static.photos/people/200x200/3",
+  },
+  {
+    name: "Comr Dr Sovereignty O. Oturu",
+    role: "ASST. GENERAL SECRETARY",
+    dept: "Dept. of Obs. & Gynae.",
+    phone: "+234-706-878-5913",
+    email: "mcsove@yahoo.com",
+    img: "http://static.photos/people/200x200/4",
+  },
+  {
+    name: "Dr Jacob Sunday Nwaonicha",
+    role: "FINANCIAL SECRETARY",
+    dept: "Dept. of Obs. & Gynae.",
+    phone: "+234-706-151-1105",
+    email: "jnwaonicha@gmail.com",
+    img: "http://static.photos/people/200x200/5",
+  },
+  {
+    name: "Dr Ejiroghene Onomrefeduvwu",
+    role: "TREASURER",
+    dept: "Dept. of Ear, Nose & Throat",
+    phone: "+234-806-519-6441",
+    email: "ej_onos@yahoo.com",
+    img: "http://static.photos/people/200x200/6",
+  },
+  {
+    name: "Dr Ogochuku Jude Nwachuku",
+    role: "PUBLIC RELATIONS OFFICER",
+    dept: "Dept. of Internal Medicine",
+    phone: "+234-706-732-0523",
+    email: "oreinwachuku@gmail.com",
+    img: "http://static.photos/people/200x200/7",
+  },
+  {
+    name: "Dr Erhire Clinton Umukoro",
+    role: "SOCIALS/WELFARE SECRETARY",
+    dept: "Dept. of Anaesthesia & Intensive Care",
+    phone: "+234-803-878-2516",
+    email: "erhire@gmail.com",
+    img: "http://static.photos/people/200x200/8",
+  },
+  {
+    name: "Dr Chukwura Udoka",
+    role: "ACADEMIC COORDINATOR",
+    dept: "Dept. of Radiology",
+    phone: "+234-816-500-7823",
+    email: "koopaworkz@gmail.com",
+    img: "http://static.photos/people/200x200/9",
+  },
+  {
+    name: "Dr Wisdom O. Agboro",
+    role: "DIRECTOR OF SPORTS",
+    dept: "Dept. of Internal Medicine",
+    phone: "+234-810-537-9084",
+    email: "wisdomagboro@gmail.com",
+    img: "http://static.photos/people/200x200/10",
+  },
+  {
+    name: "Comr Dr Harrison E. Adja",
+    role: "EX-OFFICIO I",
+    dept: "Dept. of Anaesthesia & Intensive Care",
+    phone: "+234-803-288-5306",
+    email: "ejiro.adja@yahoo.com",
+    img: "http://static.photos/people/200x200/11",
+  },
+  {
+    name: "Dr Chijioke Peter Asogwa",
+    role: "EX-OFFICIO III",
+    dept: "Dept. of Paediatrics",
+    phone: "+234-903-457-3318",
+    email: "chijiokepeterasogwa@gmail.com",
+    img: "http://static.photos/people/200x200/12",
+  },
+  {
+    name: "Dr Stephen Oghenevwede Reuben",
+    role: "HOUSE OFFICERS' REP.",
+    dept: "",
+    phone: "+234-902-297-0581",
+    email: "reubenstephenvwede@gmail.com",
+    img: "http://static.photos/people/200x200/13",
   },
 ];

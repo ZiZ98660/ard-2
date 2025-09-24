@@ -49,7 +49,7 @@ const Footer = () => {
                     </Link>
                   </div>
                   <div>
-                    <Link href="sec.arddelsuth@gmail.com">
+                    <Link href="https://mail.google.com/mail/?view=cm&to=sec.arddelsuth@gmail.com" target="_blank" rel="noopener noreferrer">
                       <MailIcon className=" size-8" />
                     </Link>
                   </div>
@@ -106,7 +106,7 @@ const Footer = () => {
               </ul>
             </div>
           </div>
-          <div className="legal  grid-2 py">
+          <div className="legal  grid-2 pt-14 pb-8">
             <div className="text">
               <span>© 2025 ALL RIGHTS RESERVED.</span>
               <div className="">
