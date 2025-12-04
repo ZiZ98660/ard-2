@@ -37,24 +37,31 @@ const Footer = () => {
                 </div> */}
                 <span
                   className={
-                    "!text-dark !text-center underline !text-[14px] py-5"
+                    "!text-dark cursor-default !text-center underline !text-[14px] py-5"
                   }
                 >
                   GET IN TOUCH
                 </span>
                 <div className="flex gap-x-2 ">
                   <div>
-                    <Link href="http://x.com/ard_delsuth">
+                    <Link href="http://x.com/ard_delsuth" target="_blank">
                       <TwitterIcon className=" size-8" />
                     </Link>
                   </div>
                   <div>
-                    <Link href="https://mail.google.com/mail/?view=cm&to=sec.arddelsuth@gmail.com" target="_blank" rel="noopener noreferrer">
+                    <Link
+                      href="https://mail.google.com/mail/?view=cm&to=sec.arddelsuth@gmail.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <MailIcon className=" size-8" />
                     </Link>
                   </div>
                   <div>
-                    <Link href="http://pinterest.com/arddelsuth">
+                    <Link
+                      href="http://pinterest.com/arddelsuth"
+                      target="_blank"
+                    >
                       <PinterestIcon className=" size-8" />
                     </Link>
                   </div>

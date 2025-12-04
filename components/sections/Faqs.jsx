@@ -11,112 +11,91 @@ const Faqs = () => {
       <section className='agency bg-top'>
         <div className='sass-container'>
           <div className='heading-title'>
-            <TitleSm title='FAQs' /> 
-            
+            <TitleSm title='FAQs' />
           </div>
           <div className='desc'>
             <Text
-            text={`1. What is ARD DELSUTH?`}
-            className={'font-bold !text-lg'}
+              text={`1. Who is eligible for membership in the ARD DELSUTH?`}
+              className={'font-bold !text-lg'}
             />
             <br />
-            <p
-            className = {'!text-lg'}
-            >
-ARD DELSUTH is an educational platform that focuses on teaching business innovation using a combination of standard and creative principles. We offer courses and workshops designed to help both new and existing businesses adapt and thrive in today's dynamic marketplace.            </p>
-            <br />
-            <br />
-            <Text
-            text={`2. Who can benefit from ARD DELSUTH's courses?`}
-            className={'font-bold !text-lg'}
-            />
-             <br />
-            <p
-            className = {'!text-lg'}
-            >
-           Our courses are designed to cater to a wide range of individuals, from budding entrepreneurs looking to launch their first venture to established business owners seeking to innovate and revitalize their operations. LEGO® SERIOUS PLAY® facilitates full participation from all team members, ensuring that every voice is heard. Unlike conventional meetings where some participants may dominate the conversation, LSP encourages equal participation. This inclusivity helps unearth a diverse range of perspectives and solutions that might otherwise remain untapped.
+            <p className='!text-lg'>
+              The association unites doctors currently in residency training at the Delta State University Teaching Hospital. Membership also includes other doctors of similar ranks as well as house officers.
             </p>
             <br />
             <br />
             <Text
-            text={`3. What topics do your courses cover?`}
-            className={'font-bold !text-lg'}
+              text={`2. What are the primary objectives of the association?`}
+              className={'font-bold !text-lg'}
             />
-             <br />
-            <p
-            className = {'!text-lg'}
-            >
-Our curriculum includes topics such as market research, ideation, product development, marketing strategies, and more. We aim to provide a comprehensive learning experience that addresses the essential aspects of business innovation.
+            <br />
+            <p className='!text-lg'>
+              The mission of ARD DELSUTH is fourfold:
+            </p>
+            <ul className="list-disc pl-5 mt-2 !text-lg">
+              <li>To advance the welfare of doctors.</li>
+              <li>To uphold outstanding standards in residency training.</li>
+              <li>To promote efficient hospital operations.</li>
+              <li>To advocate for quality healthcare delivery within Delta State.</li>
+            </ul>
+            <br />
+            <br />
+            <Text
+              text={`3. How has the association improved the welfare and living conditions of its members?`}
+              className={'font-bold !text-lg'}
+            />
+            <br />
+            <p className='!text-lg'>
+              The ARD has achieved several milestones regarding staff welfare, including:
+            </p>
+            <ul className="list-disc pl-5 mt-2 !text-lg">
+              <li>
+                <span className="font-semibold">Healthcare:</span> Securing government approval in 2013 for free healthcare coverage for all hospital staff.
+              </li>
+              <li>
+                <span className="font-semibold">Housing:</span> Obtaining approval in 2023 for the construction of modern residential buildings for residents and house officers.
+              </li>
+              <li>
+                <span className="font-semibold">Compensation:</span> Securing a 25% Basic Consolidated Allowance as a hazard inducement for health workers during the COVID-19 pandemic in 2020.
+              </li>
+            </ul>
+            <br />
+            <br />
+            <Text
+              text={`4. What contributions has ARD DELSUTH made to specialized medical care and hospital capacity?`}
+              className={'font-bold !text-lg'}
+            />
+            <br />
+            <p className='!text-lg'>
+              The association has actively strengthened hospital capacity by:
+            </p>
+            <ul className="list-disc pl-5 mt-2 !text-lg">
+              <li>
+                <span className="font-semibold">Neurosurgery:</span> Championing the employment of a neurosurgeon in 2017, which led to the establishment of DELSUTH’s first Neurosurgery Unit.
+              </li>
+              <li>
+                <span className="font-semibold">Staffing:</span> Securing approval for the employment of 95 new nurses in 2023 to improve patient care and reduce waiting times.
+              </li>
+              <li>
+                <span className="font-semibold">Security:</span> Advocating for and achieving reinforced security measures by the Delta State Police Command to protect medical practitioners.
+              </li>
+            </ul>
+            <br />
+            <br />
+            <Text
+              text={`5. How has ARD DELSUTH demonstrated leadership at the national level?`}
+              className={'font-bold !text-lg'}
+            />
+            <br />
+            <p className='!text-lg'>
+              The association demonstrated national leadership by hosting the 2020 National Association of Resident Doctors (NARD) Annual General Meeting. This event placed Delta State at the forefront of the medical community and resulted in ARD DELSUTH members being elected to key national positions, including NARD President, Secretary General, and Treasurer.
             </p>
             <br />
             <br />
-            <Text
-            text={`4. Who are the instructors at ARD DELSUTH?`}
-            className={'font-bold !text-lg'}
-            />
-             <br />
-            <p
-            className = {'!text-lg'}
-            >
-Our instructors are seasoned business professionals and innovation experts with years of industry experience. They are passionate about sharing their knowledge and facilitating a supportive learning environment. </p>
-            <br />
-            <br />
-            <Text
-            text={`5. What learning formats do you offer?`}
-            className={'font-bold !text-lg'}
-            />
-             <br />
-            <p
-            className = {'!text-lg'}
-            >
-We offer a variety of learning formats to accommodate different preferences and schedules, including in-person classes, online courses, and customized training sessions.
-            </p>
-            <br />
-            <br />
-            <Text
-            text={`6. How do I enroll in a course?`}
-            className={'font-bold !text-lg'}
-            />
-             <br />
-            <p
-            className = {'!text-lg'}
-            >
-You can enroll in our courses directly through our website. Simply select the course you're interested in, choose a suitable learning format, and follow the registration instructions.
-            </p>
-            <br />
-            <br />
-            <Text
-            text={`7. Can I get personalized guidance or consulting for my business?`}
-            className={'font-bold !text-lg'}
-            />
-             <br />
-            <p
-            className = {'!text-lg'}
-            >
-Yes, we offer tailored training and consulting services to address the specific needs of your business. Please click on personalized training on the website and follow the registration steps.</p>
-            <br />
-            <br />
-            <Text
-            text={`8. Are there any prerequisites for enrolling in your courses?
-            `}
-            className={'font-bold !text-lg'}
-            />
-             <br />
-            <p
-            className = {'!text-lg'}
-            >
-While some courses may have recommended prerequisites, many of our courses are designed to be accessible to learners with varying levels of experience in business and innovation.
-</p>
-            <br />
-            <br />
-         
-
-            </div>
+          </div>
         </div>
       </section>
-</>
-
-   
+    </>
   )
 }
 

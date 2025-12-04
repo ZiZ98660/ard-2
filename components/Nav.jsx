@@ -78,8 +78,8 @@ const Nav = () => {
                 />
               </div>
               <Link
-                href="/membership"
-                className={activeLink == "/membership" ? "activeLink" : "none"}
+                href="/"
+                className={activeLink == "/" ? "activeLink" : "none"}
                 onClick={() => setOpen(false)}
               >
                 Membership
@@ -93,16 +93,17 @@ const Nav = () => {
               Showcase
             </Link> */}
               <Link
-                href="/blogs"
-                className={activeLink == "/blogs" ? "activeLink" : "none"}
+                href="https://mailchi.mp/f5ba93d7d672/meddigest"
+                target="_blank"
+                className={activeLink == "/" ? "activeLink" : "none"}
                 onClick={() => setOpen(false)}
               >
                 News & Events
               </Link>
 
               <Link
-                href="/services"
-                className={activeLink == "/services" ? "activeLink" : "none"}
+                href="/"
+                className={activeLink == "/" ? "activeLink" : "none"}
                 onClick={() => setOpen(false)}
               >
                 Resources

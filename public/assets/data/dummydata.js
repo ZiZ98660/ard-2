@@ -314,35 +314,21 @@ export const card_data = [
 
 export const faq_data = [
   {
-    question: "What is ARD DELSUTH?",
+    question: "Who is eligible for membership in the ARD DELSUTH?",
     answer:
-      "ARD DELSUTH is the association of resident doctors and house officers at Delta State University Teaching Hospital. We focus on doctors' welfare, quality training, efficient hospital operations, and better healthcare in Delta State. We are part of NARD and affiliated with the NMA."
+      "The association unites doctors currently in residency training at the Delta State University Teaching Hospital. Membership also includes other doctors of similar ranks as well as house officers.",
   },
   {
-    question: "What is the mission of ARD DELSUTH?",
+    question: "What are the primary objectives of the association?",
     answer:
-      "To promote doctors' welfare, high-quality residency training, efficient hospital operations, and improved healthcare in Delta State."
+      "The mission of ARD DELSUTH is fourfold:\n\nTo advance the welfare of doctors.\n\nTo uphold outstanding standards in residency training.\n\nTo promote efficient hospital operations.\n\nTo advocate for quality healthcare delivery within Delta State.",
   },
   {
-    question: "What are the main activities of ARD DELSUTH?",
+    question: "How has the association improved the welfare and living conditions of its members?",
     answer:
-      "We hold regular meetings, support departmental accreditation, organize research and training events, run certified courses, publish a medical journal, advocate for welfare and better facilities, and contribute to hospital policy."
+      "The ARD has achieved several milestones regarding staff welfare, including:\n\nHealthcare: Securing government approval in 2013 for free healthcare coverage for all hospital staff.\n\nHousing: Obtaining approval in 2023 for the construction of modern residential buildings for residents and house officers.\n\nCompensation: Securing a 25% Basic Consolidated Allowance as a hazard inducement for health workers during the COVID-19 pandemic in 2020.",
   },
-  {
-    question: "What is ARD DELSUTH's approach to innovation and infrastructure development?",
-    answer:
-      "We advocate for new medical equipment, address staffing and infrastructure issues, and help shape hospital policies and reforms."
-  },
-  {
-    question: "Who can join ARD DELSUTH?",
-    answer:
-      "All resident doctors and house officers at DELSUTH are eligible to join."
-  },
-  {
-    question: "What affiliations does ARD DELSUTH have?",
-    answer:
-      "We are a chapter of NARD and affiliated with the NMA."
-  }
+
 ];
 
 export const link = [

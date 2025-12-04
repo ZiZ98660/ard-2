@@ -13,47 +13,50 @@ const FAQs = () => {
 		setOpenIndex(openIndex === idx ? null : idx);
 	};
 	return (
-		<>
-			<section className="sass-container !pt-4 !pb-16 ">
-				<div className="grid-2 !pb-16">
-					<div>
-						<div>
-							<Title title={"Any questions?"} />
-							<Text
-								text={
-									"We are here to answer your questions or get you a coffee."
-								}
-							/>
-						</div>
-						<div className="flex gap-x-2 w-full justify-center">
-							<Link
-								href={"/faqs"}
-								className="!py-[10px] !mt-5 bg-primary-100 rounded-lg text-white !px-[30px]"
-							>
-								See FAQs
-							</Link>
-							<button className="!py-[10px] !mt-5 text-primary-200 bg-[#f0f0ef] rounded-lg !px-[30px]">
-								Ask questions
-							</button>
-						</div>
-					</div>
-					<img
-						src="/assets/images/coffee.gif"
-						className="flex justify-self-end"
-						alt=""
-					/>
-				</div>
-				{faq_data.map((fd, i) => (
-					<FAQCard
-						key={i}
-						question={fd.question}
-						answer={fd.answer}
-						isOpen={openIndex === i}
-						onClick={() => handleToggle(i)}
-					/>
-				))}
-			</section>
-			{/* <div className=''>
+    <>
+      <section className="sass-container !pt-4 !pb-16 ">
+        <div className="grid-2 !pb-16">
+          <div>
+            <div>
+              <Title title={"Any questions?"} />
+              <Text
+                text={
+                  "We are here to answer your questions or get you a coffee."
+                }
+              />
+            </div>
+            <div className="flex gap-x-2 ">
+              <Link
+                href={"/faqs"}
+                className="!py-[10px] !mt-5 bg-primary-100 rounded-lg text-white !px-[30px]"
+              >
+                See FAQs
+              </Link>
+              <Link
+                href="https://mail.google.com/mail/?view=cm&to=sec.arddelsuth@gmail.com"
+                className="!py-[10px] !mt-5 text-primary-200 bg-[#f0f0ef] rounded-lg !px-[30px]"
+              >
+                Ask questions
+              </Link>
+            </div>
+          </div>
+          <img
+            src="/assets/images/coffee.gif"
+            className="flex justify-self-end"
+            alt=""
+          />
+        </div>
+        {faq_data.map((fd, i) => (
+          <FAQCard
+            key={i}
+            question={fd.question}
+            answer={fd.answer}
+            isOpen={openIndex === i}
+            onClick={() => handleToggle(i)}
+          />
+        ))}
+      </section>
+      {/* <div className=''>
           <div className='heading-title !pt-16 text-[#141a15a1] !text-3xl '>
             <Title title='WE ARE PROUD TO WORK WITH THESE COMPANIES' />
           </div>
@@ -65,8 +68,8 @@ const FAQs = () => {
             ))}
           </div>
         </div> */}
-		</>
-	);
+    </>
+  );
 };
 
 export default FAQs;
