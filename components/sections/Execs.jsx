@@ -74,7 +74,7 @@ const Execs = () => {
             >
               <div className="flex items-center mb-4">
                 <img
-                  src={ex.img}
+                  src={ex.avatar}
                   alt={ex.name}
                   className="w-16 h-16 rounded-full object-cover mr-4"
                 />
@@ -123,7 +123,7 @@ const Execs = () => {
                 >
                   <div className="flex items-center mb-4">
                     <img
-                      src={ex.img}
+                      src={ex.avatar}
                       alt={ex.name}
                       className="w-16 h-16 rounded-full object-cover mr-4"
                     />
@@ -164,14 +164,23 @@ const Execs = () => {
           whileInView="visible"
           viewport={{ once: true }}
         >
-          {!showAll && rest.length > 0 && (
+          {rest.length > 0 && (
             <button
-              onClick={() => setShowAll(true)}
+              onClick={() => setShowAll((prev) => !prev)}
               className="inline-flex items-center text-blue-600 font-medium hover:text-blue-800 transition-colors"
               style={{ outline: "none" }}
             >
-              View Full Executive List
-              <Icon icon="mdi:chevron-right" className="ml-1 w-5 h-5" />
+              {showAll ? (
+                <>
+                  See Less
+                  <Icon icon="mdi:chevron-up" className="ml-1 w-5 h-5" />
+                </>
+              ) : (
+                <>
+                  View Full Executive List
+                  <Icon icon="mdi:chevron-right" className="ml-1 w-5 h-5" />
+                </>
+              )}
             </button>
           )}
         </motion.div>

@@ -508,7 +508,7 @@ export const EXECUTIVES = [
     dept: "Dept. of Surgery",
     phone: "+234-803-426-3408",
     email: "ejeheritega@gmail.com",
-    img: "http://static.photos/people/200x200/1",
+    avatar: "https://api.dicebear.com/7.x/initials/svg?seed=Oghenetega+David+Ejeheri",
   },
   {
     name: "Dr Eseoghene Deborah Etetafia",
@@ -516,7 +516,7 @@ export const EXECUTIVES = [
     dept: "Dept. of Oral & Maxillofacial Surgery",
     phone: "+234-810-937-8371",
     email: "esedebby2@gmail.com",
-    img: "http://static.photos/people/200x200/2",
+    avatar: "https://api.dicebear.com/7.x/initials/svg?seed=Eseoghene+Deborah+Etetafia",
   },
   {
     name: "Dr Aghogho Ufomata Isaac",
@@ -524,7 +524,7 @@ export const EXECUTIVES = [
     dept: "Dept. of Anaesthesia & Intensive Care",
     phone: "+234-816-910-6477",
     email: "meastrodr26@gmail.com",
-    img: "http://static.photos/people/200x200/3",
+    avatar: "https://api.dicebear.com/7.x/initials/svg?seed=Aghogho+Ufomata+Isaac",
   },
   {
     name: "Comr Dr Sovereignty O. Oturu",
@@ -532,7 +532,7 @@ export const EXECUTIVES = [
     dept: "Dept. of Obs. & Gynae.",
     phone: "+234-706-878-5913",
     email: "mcsove@yahoo.com",
-    img: "http://static.photos/people/200x200/4",
+    avatar: "https://api.dicebear.com/7.x/initials/svg?seed=Sovereignty+O+Oturu",
   },
   {
     name: "Dr Jacob Sunday Nwaonicha",
@@ -540,7 +540,7 @@ export const EXECUTIVES = [
     dept: "Dept. of Obs. & Gynae.",
     phone: "+234-706-151-1105",
     email: "jnwaonicha@gmail.com",
-    img: "http://static.photos/people/200x200/5",
+    avatar: "https://api.dicebear.com/7.x/initials/svg?seed=Jacob+Sunday+Nwaonicha",
   },
   {
     name: "Dr Ejiroghene Onomrefeduvwu",
@@ -548,7 +548,7 @@ export const EXECUTIVES = [
     dept: "Dept. of Ear, Nose & Throat",
     phone: "+234-806-519-6441",
     email: "ej_onos@yahoo.com",
-    img: "http://static.photos/people/200x200/6",
+    avatar: "https://api.dicebear.com/7.x/initials/svg?seed=Ejiroghene+Onomrefeduvwu",
   },
   {
     name: "Dr Ogochuku Jude Nwachuku",
@@ -556,7 +556,7 @@ export const EXECUTIVES = [
     dept: "Dept. of Internal Medicine",
     phone: "+234-706-732-0523",
     email: "oreinwachuku@gmail.com",
-    img: "http://static.photos/people/200x200/7",
+    avatar: "https://api.dicebear.com/7.x/initials/svg?seed=Ogochuku+Jude+Nwachuku",
   },
   {
     name: "Dr Erhire Clinton Umukoro",
@@ -564,7 +564,7 @@ export const EXECUTIVES = [
     dept: "Dept. of Anaesthesia & Intensive Care",
     phone: "+234-803-878-2516",
     email: "erhire@gmail.com",
-    img: "http://static.photos/people/200x200/8",
+    avatar: "https://api.dicebear.com/7.x/initials/svg?seed=Erhire+Clinton+Umukoro",
   },
   {
     name: "Dr Chukwura Udoka",
@@ -572,7 +572,7 @@ export const EXECUTIVES = [
     dept: "Dept. of Radiology",
     phone: "+234-816-500-7823",
     email: "koopaworkz@gmail.com",
-    img: "http://static.photos/people/200x200/9",
+    avatar: "https://api.dicebear.com/7.x/initials/svg?seed=Chukwura+Udoka",
   },
   {
     name: "Dr Wisdom O. Agboro",
@@ -580,7 +580,7 @@ export const EXECUTIVES = [
     dept: "Dept. of Internal Medicine",
     phone: "+234-810-537-9084",
     email: "wisdomagboro@gmail.com",
-    img: "http://static.photos/people/200x200/10",
+    avatar: "https://api.dicebear.com/7.x/initials/svg?seed=Wisdom+O+Agboro",
   },
   {
     name: "Comr Dr Harrison E. Adja",
@@ -588,7 +588,7 @@ export const EXECUTIVES = [
     dept: "Dept. of Anaesthesia & Intensive Care",
     phone: "+234-803-288-5306",
     email: "ejiro.adja@yahoo.com",
-    img: "http://static.photos/people/200x200/11",
+    avatar: "https://api.dicebear.com/7.x/initials/svg?seed=Harrison+E+Adja",
   },
   {
     name: "Dr Chijioke Peter Asogwa",
@@ -596,7 +596,7 @@ export const EXECUTIVES = [
     dept: "Dept. of Paediatrics",
     phone: "+234-903-457-3318",
     email: "chijiokepeterasogwa@gmail.com",
-    img: "http://static.photos/people/200x200/12",
+    avatar: "https://api.dicebear.com/7.x/initials/svg?seed=Chijioke+Peter+Asogwa",
   },
   {
     name: "Dr Stephen Oghenevwede Reuben",
@@ -604,6 +604,6 @@ export const EXECUTIVES = [
     dept: "",
     phone: "+234-902-297-0581",
     email: "reubenstephenvwede@gmail.com",
-    img: "http://static.photos/people/200x200/13",
+    avatar: "https://api.dicebear.com/7.x/initials/svg?seed=Stephen+Oghenevwede+Reuben",
   },
 ];
