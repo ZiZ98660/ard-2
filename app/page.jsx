@@ -1,4 +1,5 @@
 "use client";
+import React, { useEffect, useRef } from "react";
 import Banner from "@/components/Banner";
 import Expertise from "@/components/Expertise";
 import ShowCase from "@/components/ShowCase";
@@ -17,10 +18,138 @@ import Link from "next/link";
 import Testimonial2 from "@/components/Testimonial copy";
 import Form from "@/components/sections/Form";
 import Head from "next/head";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, useAnimation, useInView } from "framer-motion";
 import smoothscroll from "smoothscroll-polyfill";
 import { Icon } from "@iconify/react";
 import Execs, { fadeUp } from "@/components/sections/Execs";
+
+// Small reusable hook for counting up
+const useCountUp = (end, duration = 2) => {
+  const ref = useRef();
+  const controls = useAnimation();
+  const isInView = useInView(ref, { margin: "-80px" });
+
+  useEffect(() => {
+    if (isInView && ref.current) {
+      controls.start({ count: end });
+    }
+  }, [isInView, end, controls]);
+
+  return { ref, controls };
+};
+
+function AnimatedStat({ end, label, icon, color, duration = 1.8 }) {
+  const nodeRef = useRef();
+  const [value, setValue] = React.useState(0);
+  const controls = useAnimation();
+  const isInView = useInView(nodeRef, { margin: "-80px" });
+
+  useEffect(() => {
+    let raf;
+    if (isInView) {
+      const startTimestamp = performance.now();
+      function step(now) {
+        let elapsed = (now - startTimestamp) / 1000;
+        if (elapsed > duration) elapsed = duration;
+        const current = Math.floor((end - 0) * (elapsed / duration) + 0);
+        setValue(current);
+        if (elapsed < duration) {
+          raf = requestAnimationFrame(step);
+        } else {
+          setValue(end);
+        }
+      }
+      raf = requestAnimationFrame(step);
+    } else {
+      setValue(0);
+    }
+    return () => raf && cancelAnimationFrame(raf);
+  }, [isInView, end, duration]);
+
+  return (
+    <motion.div
+      ref={nodeRef}
+      className="bg-white shadow-xl rounded-2xl p-7 flex flex-col items-center stat-card"
+      initial={{ opacity: 0, y: 50, scale: 0.98 }}
+      whileInView={{ opacity: 1, y: 0, scale: 1 }}
+      transition={{ type: "spring", damping: 24, stiffness: 160, duration: 0.7 }}
+      viewport={{ once: true }}
+    >
+      <span
+        className="mb-1 rounded-full p-3 bg-blue-50"
+        style={{ background: color + "22" || "#f0f8ff" }}
+      >
+        <Icon icon={icon} color={color} width={38} height={38} />
+      </span>
+      <div className="font-extrabold text-3xl md:text-4xl text-blue-700 mb-2">
+        {typeof end === "number" ? (
+          <>
+            {value.toLocaleString()}
+            {/* For plus sign on some stats */}
+            {label.includes("more") ? "+" : ""}
+          </>
+        ) : (
+          end
+        )}
+      </div>
+      <div className="text-gray-700 text-center font-semibold text-base leading-tight">
+        {label}
+      </div>
+    </motion.div>
+  );
+}
+
+// List of stats for animated cards
+const achievementsStats = [
+  // {
+  //   end: 2020,
+  //   label: "Hosted the NARD National Convention",
+  //   icon: "ph:trophy-duotone",
+  //   color: "#f59e42",
+  // },
+  {
+    end: 3,
+    label: "NARD National Executive Positions Secured",
+    icon: "material-symbols:leaderboard",
+    color: "#3b82f6",
+  },
+  // {
+  //   end: 2013,
+  //   label: "Universal Healthcare Coverage for Hospital Staff",
+  //   icon: "mdi:account-heart",
+  //   color: "#ef4444",
+  // },
+  {
+    end: '2017',
+    label: "Established Neurosurgery Unit",
+    icon: "icon-park-outline:brain",
+    color: "#a855f7",
+  },
+  {
+    end: 25,
+    label: "Secured 25% COVID-19 Frontline Allowance",
+    icon: "mdi:shield-outline",
+    color: "#06b6d4",
+  },
+  // {
+  //   end: 2023,
+  //   label: "Modern Medical Staff Residences Approved",
+  //   icon: "material-symbols:location-home",
+  //   color: "#10b981",
+  // },
+  {
+    end: 95,
+    label: "95 New Nursing Staff Hired",
+    icon: "mdi:stethoscope",
+    color: "#eab308",
+  },
+  // {
+  //   end: 2023,
+  //   label: "Advocated For Medical Staff Security",
+  //   icon: "material-symbols:safety-check-rounded",
+  //   color: "#6366f1",
+  // },
+];
 
 
 
@@ -66,13 +195,6 @@ export default function Home() {
                 Advancing medical excellence, welfare, and healthcare in Delta
                 State.
               </motion.p>
-              {/* <motion.div
-                className="flex space-x-4"
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.5, duration: 0.7, ease: "easeOut" }}
-              >
-              </motion.div> */}
             </motion.div>
             <motion.div
               className="hidden md:block md:w-1/2 h-full"
@@ -196,7 +318,6 @@ export default function Home() {
                 viewport={{ once: true }}
               >
                 <div className="bg-blue-100 p-4 rounded-lg">
-                  {/* Use your preferred icon library here */}
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="text-blue-600"
@@ -235,14 +356,71 @@ export default function Home() {
           >
             <Link
               href={"/about-us/who-we-are"}
-              className="btn_link max-800:!w-full !py-[10px] !mt-3 !mb-5 !text-white bg-primary-100 hover:bg-primary-200 rounded-[2em] !px-[30px]"
+              className="btn_link max-800:!w-full !py-[20px] !mt-3 !mb-5 !text-white bg-primary-100 hover:bg-primary-200 rounded-[2em] !px-[40px]"
             >
               Learn More
             </Link>
           </motion.div>
         </div>
       </section>
-      <section id="activities" className="pb-12">
+
+      {/* Achievements / Stats Section */}
+      <section
+        id="achievements"
+        className="py-16 "
+      >
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            className="text-center mb-12"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7 }}
+            viewport={{ once: true }}
+          >
+            <h2 className="text-3xl font-bold mb-4">
+              Our Achievements
+            </h2>
+            <div className="w-20 h-1 bg-blue-600 mx-auto mb-4"></div>
+           
+          </motion.div>
+
+          {/* Animated Stats Cards */}
+          <div className="grid gap-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+            {achievementsStats.map((stat, i) => (
+              <AnimatedStat
+                key={i}
+                end={stat.end}
+                label={stat.label}
+                icon={stat.icon}
+                color={stat.color}
+                duration={1.6 + 0.2 * (i % 2)}
+              />
+            ))}
+          </div>
+{/* 
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10 mt-14">
+            {achievementsDescriptions.map((ach, idx) => (
+              <motion.div
+                key={ach.title}
+                className="bg-gray-50 rounded-2xl p-6 shadow group/achieve flex flex-col"
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.08 * idx }}
+                viewport={{ once: true }}
+              >
+                <div className="font-bold text-blue-900 text-lg mb-2 leading-snug">
+                  {ach.title}
+                </div>
+                <div className="text-gray-700 leading-relaxed">
+                  {ach.desc}
+                </div>
+              </motion.div>
+            ))}
+          </div> */}
+        </div>
+      </section>
+
+      <section id="activities" className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             className="text-center mb-12"
@@ -255,10 +433,10 @@ export default function Home() {
               Our Activities
             </h2>
             <div className="w-20 h-1 bg-blue-600 mx-auto"></div>
-            <p className="text-gray-600 max-w-3xl mx-auto mt-4">
+            {/* <p className="text-gray-600 max-w-3xl mx-auto mt-4">
               We engage in various activities to promote medical excellence,
               welfare, and community health.
-            </p>
+            </p> */}
           </motion.div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {activities2.map((act, i) => (
@@ -267,7 +445,7 @@ export default function Home() {
                 className="bg-white p-6  rounded-lg shadow-md card-hover transition-all"
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: act.delay/1000 }}
+                transition={{ duration: 0.5, delay: act.delay / 1000 }}
                 viewport={{ once: true }}
               >
                 <div
@@ -300,13 +478,14 @@ export default function Home() {
         >
           <Link
             href={"/about-us/what-we-do"}
-            className="btn_link max-800:!w-full !py-[10px] !mt-3 !mb-5 !text-white bg-primary-100 hover:bg-primary-200 rounded-[2em] !px-[30px]"
+            className="btn_link max-800:!w-full !py-[20px] !px-[40px] !mt-3 !mb-5 !text-white bg-primary-100 hover:bg-primary-200 rounded-[2em]"
           >
             Learn More
           </Link>
         </motion.div>
       </section>
       <Execs />
+      <Testimonial />
       {/* <Banner /> */}
       {/* <ShowCase /> */}
       <Form />

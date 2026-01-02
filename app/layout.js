@@ -65,7 +65,9 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en">
-      <body>
+      <body
+      className="overflow-x-hidden"
+      >
         <div className="w-full">
           <Nav />
           <main>{children}</main>

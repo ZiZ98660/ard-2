@@ -9,7 +9,7 @@ import { AiOutlineClose } from "react-icons/ai";
 import "@/styles/globals.css";
 import DropDown from "./DropDown/page";
 import { FaCaretDown } from "react-icons/fa";
-import { link } from "@/public/assets/data/dummydata";
+import { link, resources } from "@/public/assets/data/dummydata";
 
 const Nav = () => {
 	const [activeLink, setActiveLink] = useState("");
@@ -56,27 +56,14 @@ const Nav = () => {
               // className="max-[800px]:hidden"
               className="flex justify-center gap-x-12 max-md:!gap-x-4  max-800:!w-full max-800:!grid max-800:!gap-y-12 max-800:!place-content-center "
             >
-              {/* <Link href='/' className={activeLink == "/" ? "activeLink" : "none"}>
-              Solutions
-            </Link> */}
-
-              <div
-                onClick={toggleDropDown}
-                onMouseEnter={openDropDown}
-                // onMouseLeave={closeDropDown}
-                className={`${
-                  activeLink == "/about-us" ? "activeLink" : "none"
-                } cursor-pointer flex gap-x-2 relative`}
+              <Link
+                href="/"
+                className={activeLink == "/" ? "activeLink" : "none"}
+                onClick={() => setOpen(false)}
               >
-                About Us
-                <FaCaretDown />
-                <DropDown
-                  options={link}
-                  isOpen={isDropdownOpen}
-                  onClose={closeDropDown}
-                  closeNav={() => setOpen(false)}
-                />
-              </div>
+                Home
+              </Link>
+              <DropDown options={link} title="About Us" />
               <Link
                 href="/"
                 className={activeLink == "/" ? "activeLink" : "none"}
@@ -85,32 +72,9 @@ const Nav = () => {
                 Membership
               </Link>
 
-              {/* <Link href='/team' className={activeLink == "/team" ? "activeLink" : "none"}>
-              Resources
-            </Link> */}
+              <DropDown options={resources} title="Resources" />
 
-              {/* <Link href='/showcase' className={activeLink == "/showcase" ? "activeLink" : "none"}>
-              Showcase
-            </Link> */}
-              <Link
-                href="https://mailchi.mp/f5ba93d7d672/meddigest"
-                target="_blank"
-                className={activeLink == "/" ? "activeLink" : "none"}
-                onClick={() => setOpen(false)}
-              >
-                News & Events
-              </Link>
-
-              <Link
-                href="/"
-                className={activeLink == "/" ? "activeLink" : "none"}
-                onClick={() => setOpen(false)}
-              >
-                Resources
-              </Link>
-              {/* <Link href='/contact' class={activeLink == "/contact" ? "activeLink" : "none"}>
-              Contact
-            </Link> */}
+             
             </div>
           </nav>
           <button className="button-primary max-800:hidden">contact us</button>

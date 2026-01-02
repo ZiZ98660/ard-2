@@ -136,6 +136,7 @@ export const TestimonialCard = ({
 				src={`/assets/images/${logo}`}
 				width={60}
 				className="flex place-self-center"
+				height={60}
 			/>
 		</div>
 	);

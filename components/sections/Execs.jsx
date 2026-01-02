@@ -42,7 +42,7 @@ const Execs = () => {
   const rest = EXECUTIVES.slice(3);
 
   return (
-    <section id="executives" className="py-8 ">
+    <section id="executives" className="py-12 ">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           className="text-center mb-12"
@@ -55,10 +55,10 @@ const Execs = () => {
             Executive Council
           </h2>
           <div className="w-20 h-1 bg-blue-600 mx-auto"></div>
-          <p className="text-gray-600 max-w-3xl mx-auto mt-4">
+          {/* <p className="text-gray-600 max-w-3xl mx-auto mt-4">
             Meet our dedicated team leading the Association of Resident Doctors
             at DELSUTH
-          </p>
+          </p> */}
         </motion.div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Always show first 3 */}

@@ -83,12 +83,12 @@ const Testimonial2 = () => {
 								<div key={i}>
 									<div className="card">
 										<div className="image">
-											{/* <div className='img'> */}
-											{/* <img src={user.cover} alt='' /> */}
-											{/* </div> */}
+											<div className='img'>
+											<img src={user.cover} alt='' />
+											</div>
 											<div className="img-text">
 												<h3>{user.name}</h3>
-												{/* <span>{user.post}</span> */}
+												<span>{user.post}</span>
 											</div>
 										</div>
 										<div className="details">

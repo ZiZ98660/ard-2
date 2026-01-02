@@ -56,58 +56,29 @@ const Testimonial = () => {
 		],
 	};
 	return (
-		<>
-			<section className=" sass-container !mt-10 !mb-16 ">
-				<div className="text-center !pt-2 !pb-28 ">
-					<Title
-						title="Best-in-Class Innovation management experts"
-						className={" text-center !pb-10"}
-					/>
-					<div className="text-dark">
-						Recognised by the G2 Crowd as innovation management software meeting
-						the requirements for enterprises the best, our team of innovation
-						experts has supported companies around the globe to launch and scale
-						their KICKBOX programs.
-					</div>
-					<div className="!pt-6">
-						Our specialists make sure that all your specific needs are attended
-						to, and our in-house designers translate this into an experience
-						that makes your program unique.
-					</div>
-				</div>
-				<div className="w-full grid-3 !pb-20">
-					<img
-						src="/assets/images/first.png"
-						className="w-[7.5em] flex justify-self-center"
-						alt=""
-					/>
-					<img
-						src="/assets/icons/second.svg"
-						className="w-[7.5em] flex justify-self-center "
-						alt=""
-					/>
-					<img
-						src="/assets/images/third.png"
-						className="w-[7.5em] flex justify-self-center "
-						alt=""
-					/>
-				</div>
+    <>
+      <section className=" sass-container !mt-10 !mb-16 ">
+        <div className="text-center !pt-2 ">
+          <h2 className="text-3xl font-bold text-gray-800 mb-4">
+            What Our Members Say
+          </h2>
+          <div className="w-20 h-1 bg-blue-600 mx-auto"></div>
+        </div>
+        <div className="mt-10">
+          {card_data.map((cd, i) => (
+            <TestimonialCard
+              key={i}
+              profile={cd.profile}
+              name={cd.name}
+              position={cd.position}
+              company={cd.company}
+              remark={cd.remark}
+              logo={cd.logo}
+            />
+          ))}
+        </div>
 
-				<div className="mt-6">
-					{card_data.map((cd, i) => (
-						<TestimonialCard
-							key={i}
-							profile={cd.profile}
-							name={cd.name}
-							position={cd.position}
-							company={cd.company}
-							remark={cd.remark}
-							logo={cd.logo}
-						/>
-					))}
-				</div>
-
-				<div className="bg-primary-200 rounded-[10px] p-10 items-center grid-custom_1">
+        {/* <div className="bg-primary-200 rounded-[10px] p-10 items-center grid-custom_1">
 					<img
 						loading="lazy"
 						src="/assets/images/mauro.jpg"
@@ -131,10 +102,10 @@ const Testimonial = () => {
 							Let's talk
 						</button>
 					</div>
-				</div>
-			</section>
-		</>
-	);
+				</div> */}
+      </section>
+    </>
+  );
 };
 
 export default Testimonial;

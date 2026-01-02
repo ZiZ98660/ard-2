@@ -84,29 +84,29 @@ export const testimonial2 = [
   {
     id: 1,
     name: "Innovation Accounting",
-    // cover"../images/e1.jpg",
-    // post: "Seven consulting - CEO",
+    cover:"../images/e1.jpg",
+    post: "Seven consulting - CEO",
     desc: "Track and report progress with precision.",
   },
   {
     id: 2,
     name: "Explore",
-    // cover: "../images/e2.jpg",
-    // post: "Seven Arts - marketing manager",
+    cover: "../images/e2.jpg",
+    post: "Seven Arts - marketing manager",
     desc: "Identify and incubate new opportunities through idea management, hackathons, and accelerated programs. Use LEGO SeriousPlay to visualize and understand complex problems, fostering creative and collaborative solutions.",
   },
   {
     id: 3,
     name: "Exploit",
-    // cover: "../images/e3.jpg",
-    // post: "Seven consulting - CEO",
+    cover: "../images/e3.jpg",
+    post: "Seven consulting - CEO",
     desc: "Maximize ROI with robust management practices, continuous improvement, and effective partner collaboration. Apply Kickbox Innovation principles to ensure that ideas are rapidly prototyped, tested, and scaled efficiently.",
   },
   {
     id: 4,
     name: "Open Innovation",
-    // cover: "../images/e4.jpg",
-    // post: "Seven Arts - marketing manager",
+    cover: "../images/e4.jpg",
+    post: "Seven Arts - marketing manager",
     desc: "Leverage your ecosystem through dynamic collaborations and open idea exchanges. Integrate both LEGO SeriousPlay for team-building and ideation, and Kickbox for structured innovation processes.",
   },
 ]
@@ -287,29 +287,29 @@ export const strategy = [
 
 export const card_data = [
   {
-    profile: 'roger.jpeg',
-    name: 'Roger Wüthrich-Hasenböhler',
+    profile: 'dr_edmun.jpg',
+    name: 'Dr Edmund Meme',
     position: 'Non-Executive Vice President',
-    company: 'Swisscom',
-    remark: 'With the KICKBOX program, our employees can drive innovation resulting in new services and products for Swisscom.',
-    logo: 'swiss_logo.svg'
+    company: 'ARD DELSUTH',
+    remark: 'I am incredibly grateful to ARD DELSUTH. The association consistently advocated for my welfare, good working conditions and quality training and this helped me grow professionally and personally. Knowing that the association stood firmly behind me gave me confidence and security during my time in DELSUTH. I will forever be grateful to this community. God bless ARD DELSUTH!',
+    logo: 'logo.png'
   },
-  {
-    profile: 'daniel.jpeg',
-    name: 'Daniel Alzer',
-    position: 'Investment & Innovation Manager',
-    company: 'CSS Insurance',
-    remark: 'Of course, we are looking for the next big thing – however, the transformational impact the KICKBOX Program has on our entire culture is impressive and exactly what we have been looking for!',
-    logo: 'css_logo.png'
-  },
-  {
-    profile: 'karel.jpg',
-    name: 'Karel van Eechoud',
-    position: 'Senior Innovation Manager',
-    company: 'Implenia',
-    remark: 'The decentralized KICKBOX approach was effective at generating new ideas, and also helped to engage our people making us more attractive as an employer.',
-    logo: 'imp_logo.png'
-  },
+  // {
+  //   profile: 'daniel.jpeg',
+  //   name: 'Daniel Alzer',
+  //   position: 'Investment & Innovation Manager',
+  //   company: 'CSS Insurance',
+  //   remark: 'Of course, we are looking for the next big thing – however, the transformational impact the KICKBOX Program has on our entire culture is impressive and exactly what we have been looking for!',
+  //   logo: 'css_logo.png'
+  // },
+  // {
+  //   profile: 'karel.jpg',
+  //   name: 'Karel van Eechoud',
+  //   position: 'Senior Innovation Manager',
+  //   company: 'Implenia',
+  //   remark: 'The decentralized KICKBOX approach was effective at generating new ideas, and also helped to engage our people making us more attractive as an employer.',
+  //   logo: 'imp_logo.png'
+  // },
 ]
 
 export const faq_data = [
@@ -339,6 +339,29 @@ export const link = [
   {
     title: "What We Do",
     link: "#activities"
+  },
+  {
+    title: "Achievements",
+    link: "#achievemwnts"
+  },
+];
+export const resources = [
+  {
+    title: "Newsletter",
+    link: "https://mailchi.mp/f5ba93d7d672/meddigest",
+    target: "_blank"
+  },
+  {
+    title: "Events",
+    link: "/events"
+  },
+  {
+    title: "Webinars",
+    link: "/webinars"
+  },
+  {
+    title: "Testimonials",
+    link: "/testimonials" 
   },
 ];
 
@@ -503,68 +526,75 @@ export const activities2 = [
 
 export const EXECUTIVES = [
   {
-    name: "Dr Oghenetega David Ejeheri",
-    role: "PRESIDENT",
-    dept: "Dept. of Surgery",
-    phone: "+234-803-426-3408",
-    email: "ejeheritega@gmail.com",
-    avatar: "https://api.dicebear.com/7.x/initials/svg?seed=Oghenetega+David+Ejeheri",
-  },
-  {
-    name: "Dr Eseoghene Deborah Etetafia",
-    role: "VICE PRESIDENT",
-    dept: "Dept. of Oral & Maxillofacial Surgery",
-    phone: "+234-810-937-8371",
-    email: "esedebby2@gmail.com",
-    avatar: "https://api.dicebear.com/7.x/initials/svg?seed=Eseoghene+Deborah+Etetafia",
-  },
-  {
     name: "Dr Aghogho Ufomata Isaac",
-    role: "GENERAL SECRETARY",
-    dept: "Dept. of Anaesthesia & Intensive Care",
+    role: "PRESIDENT",
+    dept: "Dept. of Anaesthesia & Int. Care",
     phone: "+234-816-910-6477",
-    email: "meastrodr26@gmail.com",
-    avatar: "https://api.dicebear.com/7.x/initials/svg?seed=Aghogho+Ufomata+Isaac",
-  },
-  {
-    name: "Comr Dr Sovereignty O. Oturu",
-    role: "ASST. GENERAL SECRETARY",
-    dept: "Dept. of Obs. & Gynae.",
-    phone: "+234-706-878-5913",
-    email: "mcsove@yahoo.com",
-    avatar: "https://api.dicebear.com/7.x/initials/svg?seed=Sovereignty+O+Oturu",
-  },
-  {
-    name: "Dr Jacob Sunday Nwaonicha",
-    role: "FINANCIAL SECRETARY",
-    dept: "Dept. of Obs. & Gynae.",
-    phone: "+234-706-151-1105",
-    email: "jnwaonicha@gmail.com",
-    avatar: "https://api.dicebear.com/7.x/initials/svg?seed=Jacob+Sunday+Nwaonicha",
+    email: "maestrodr26@gmail.com",
+    avatar:
+      "https://api.dicebear.com/7.x/initials/svg?seed=Aghogho+Ufomata+Isaac",
   },
   {
     name: "Dr Ejiroghene Onomrefeduvwu",
-    role: "TREASURER",
+    role: "VICE PRESIDENT",
     dept: "Dept. of Ear, Nose & Throat",
     phone: "+234-806-519-6441",
     email: "ej_onos@yahoo.com",
-    avatar: "https://api.dicebear.com/7.x/initials/svg?seed=Ejiroghene+Onomrefeduvwu",
+    avatar: "/assets/images/ard_vp.jpg",
   },
   {
     name: "Dr Ogochuku Jude Nwachuku",
-    role: "PUBLIC RELATIONS OFFICER",
+    role: "GENERAL SECRETARY",
     dept: "Dept. of Internal Medicine",
     phone: "+234-706-732-0523",
     email: "oreinwachuku@gmail.com",
-    avatar: "https://api.dicebear.com/7.x/initials/svg?seed=Ogochuku+Jude+Nwachuku",
+    avatar:
+      "https://api.dicebear.com/7.x/initials/svg?seed=Ogochuku+Jude+Nwachuku",
+  },
+  {
+    name: "Dr Benedict Akporubare",
+    role: "ASST. GENERAL SECRETARY",
+    dept: "",
+    phone: "+234-810-264-1117",
+    email: "akposben1010@gmail.com",
+    avatar:
+      "https://api.dicebear.com/7.x/initials/svg?seed=Benedict+Akporubare",
+  },
+  {
+    name: "Dr Emoefe Sylvester Imonioro",
+    role: "FINANCIAL SECRETARY",
+    dept: "Dept. of Internal Medicine",
+    phone: "+234-903-260-3681",
+    email: "emysly44@gmail.com",
+    avatar:
+      "https://api.dicebear.com/7.x/initials/svg?seed=Emoefe+Sylvester+Imonioro",
+  },
+  {
+    name: "Dr Solomon Obinna Egede",
+    role: "TREASURER",
+    dept: "Dept. of Surgery",
+    phone: "+234-803-926-8078",
+    email: "egedeobisolo900@gmail.com",
+    avatar:
+      "https://api.dicebear.com/7.x/initials/svg?seed=Solomon+Obinna+Egede",
+  },
+  {
+    name: "Dr Chijioke Peter Asogwa",
+    role: "PUBLIC RELATIONS OFFICER",
+    dept: "Dept. of Paediatrics",
+    phone: "+234-903-457-3318",
+    email: "chijiokepeterasogwa@gmail.com",
+    avatar:
+      "https://api.dicebear.com/7.x/initials/svg?seed=Chijioke+Peter+Asogwa",
   },
   {
     name: "Dr Erhire Clinton Umukoro",
     role: "SOCIALS/WELFARE SECRETARY",
-    dept: "Dept. of Anaesthesia & Intensive Care",
+    dept: "Dept. of Anaesthesia & Int. Care",
     phone: "+234-803-878-2516",
     email: "erhire@gmail.com",
-    avatar: "https://api.dicebear.com/7.x/initials/svg?seed=Erhire+Clinton+Umukoro",
+    avatar:
+      "https://api.dicebear.com/7.x/initials/svg?seed=Erhire+Clinton+Umukoro",
   },
   {
     name: "Dr Chukwura Udoka",
@@ -575,35 +605,30 @@ export const EXECUTIVES = [
     avatar: "https://api.dicebear.com/7.x/initials/svg?seed=Chukwura+Udoka",
   },
   {
-    name: "Dr Wisdom O. Agboro",
+    name: "Dr Abraham Ogatulu Ikuni",
     role: "DIRECTOR OF SPORTS",
-    dept: "Dept. of Internal Medicine",
-    phone: "+234-810-537-9084",
-    email: "wisdomagboro@gmail.com",
-    avatar: "https://api.dicebear.com/7.x/initials/svg?seed=Wisdom+O+Agboro",
+    dept: "",
+    phone: "+234-808-018-7445",
+    email: "abrahamogatulu@gmail.com",
+    avatar:
+      "https://api.dicebear.com/7.x/initials/svg?seed=Abraham+Ogatulu+Ikuni",
   },
   {
-    name: "Comr Dr Harrison E. Adja",
+    name: "Dr Oghenetega David Ejeheri",
     role: "EX-OFFICIO I",
-    dept: "Dept. of Anaesthesia & Intensive Care",
-    phone: "+234-803-288-5306",
-    email: "ejiro.adja@yahoo.com",
-    avatar: "https://api.dicebear.com/7.x/initials/svg?seed=Harrison+E+Adja",
+    dept: "Dept. of Surgery",
+    phone: "+234-803-426-3408",
+    email: "ejeheritega@gmail.com",
+    avatar:
+      "https://api.dicebear.com/7.x/initials/svg?seed=Oghenetega+David+Ejeheri",
   },
   {
-    name: "Dr Chijioke Peter Asogwa",
-    role: "EX-OFFICIO III",
-    dept: "Dept. of Paediatrics",
-    phone: "+234-903-457-3318",
-    email: "chijiokepeterasogwa@gmail.com",
-    avatar: "https://api.dicebear.com/7.x/initials/svg?seed=Chijioke+Peter+Asogwa",
-  },
-  {
-    name: "Dr Stephen Oghenevwede Reuben",
+    name: "Dr Fred Oghenekparovwe Abuye",
     role: "HOUSE OFFICERS' REP.",
     dept: "",
-    phone: "+234-902-297-0581",
-    email: "reubenstephenvwede@gmail.com",
-    avatar: "https://api.dicebear.com/7.x/initials/svg?seed=Stephen+Oghenevwede+Reuben",
+    phone: "+234-810-075-8550",
+    email: "leonardofredinho@gmail.com",
+    avatar:
+      "https://api.dicebear.com/7.x/initials/svg?seed=Fred+Oghenekparovwe+Abuye",
   },
 ];
