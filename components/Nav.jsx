@@ -9,7 +9,7 @@ import { AiOutlineClose } from "react-icons/ai";
 import "@/styles/globals.css";
 import DropDown from "./DropDown/page";
 import { FaCaretDown } from "react-icons/fa";
-import { link, resources } from "@/public/assets/data/dummydata";
+import { link, news, resources } from "@/public/assets/data/dummydata";
 
 const Nav = () => {
 	const [activeLink, setActiveLink] = useState("");
@@ -64,17 +64,8 @@ const Nav = () => {
                 Home
               </Link>
               <DropDown options={link} title="About Us" />
-              <Link
-                href="/"
-                className={activeLink == "/" ? "activeLink" : "none"}
-                onClick={() => setOpen(false)}
-              >
-                Membership
-              </Link>
-
+              <DropDown options={news} title="News and Events" />
               <DropDown options={resources} title="Resources" />
-
-             
             </div>
           </nav>
           <button className="button-primary max-800:hidden">contact us</button>

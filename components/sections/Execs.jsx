@@ -76,7 +76,7 @@ const Execs = () => {
                 <img
                   src={ex.avatar}
                   alt={ex.name}
-                  className="w-16 h-16 rounded-full object-cover mr-4"
+                  className={`w-16 h-16 rounded-full object-cover mr-4${ex.avatar !== "/assets/images/ard_vp.jpg" ? " object-top" : ""}`}
                 />
                 <div>
                   <h3 className="font-bold text-gray-800">{ex.name}</h3>

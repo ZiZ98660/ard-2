@@ -334,17 +334,110 @@ export const faq_data = [
 export const link = [
   {
     title: "Who We Are",
-    link: "#about"
+    link: "#about",
   },
   {
     title: "What We Do",
-    link: "#activities"
+    link: "#activities",
   },
   {
     title: "Achievements",
-    link: "#achievemwnts"
+    link: "#achievements",
+  },
+  {
+    title: "Our Ex-Cos",
+    link: "#executives",
   },
 ];
+export const news = [
+  {
+    title: "Videos",
+    children: [
+      {
+        title: "2015 Industrial Action",
+        link: "https://youtu.be/6pDeVjQ3h2I?si=vZsy8ejXFLO32wQJ",
+      },
+      {
+        title: "2016 Protest in Asaba",
+        link: "https://youtu.be/5UsJt8rR_rM?si=ZkJuxRVbT4cJVuO5",
+      },
+      {
+        title: "2016 Protest in Asaba - Part 2",
+        link: "https://youtu.be/EuE-n6lN0iU?si=Y4IuaTkeJK4ZgTSK",
+      },
+      {
+        title: "2019 Kidnapping of Past President",
+        link: "https://youtu.be/nowyVefdfyM?si=UprPeTAB20cPhQ83",
+      },
+      {
+        title: "2022 Head of Service Visit on Withheld Salaries",
+        link: "https://youtu.be/m5iFwB-mKng?si=9iwAEHZ_Zcv6XPC2",
+      },
+      {
+        title: "2022 AGM Outreach",
+        link: "https://youtu.be/mUW63tWiqtA?si=RaEnfEzCE5smBF-d",
+      },
+      {
+        title: "2023 Police Shooting of ARD DELSUTH Vehicle",
+        link: "https://youtu.be/5TggZqDlxgM?si=xh3wpMhq-44UPxHM",
+      },
+      {
+        title: "2024 Demands",
+        link: "https://youtu.be/dKmy8RnIJhw?si=lnHS1-Q_yHjMIZFy",
+      },
+      {
+        title: "2024 Industrial Action",
+        link: "https://youtu.be/AMv02zos1aQ?si=-KSB607GPCWkngTL",
+      },
+      {
+        title: "2024 Handover Ceremony",
+        link: "https://youtu.be/R44KVzIDJ5I?si=gk-A0rXjEsc75eWl",
+      },
+      {
+        title: "2025 Industrial Action",
+        link: "https://youtu.be/ELP90JYIvyE?si=JwaUDm0LNVex7tBh",
+      },
+      {
+        title: "2025 Industrial Action (Mobile)",
+        link: "https://m.youtube.com/watch?v=lnLWUW_sJDk",
+      },
+      {
+        title: "2025 Industrial Action (Extra)",
+        link: "https://youtu.be/OMeRMU288iY?si=vSPvk6UzARZ2u1WZ",
+      },
+    ],
+  },
+  {
+    title: "Publications",
+    children: [
+      {
+        title: "2024 Strike Ultimatum",
+        link: "https://thenationonlineng.net/resident-doctors-in-delta-issue-7-day-ultimatum-to-oborevwori/amp/",
+      },
+      {
+        title: "2024 Warning Strike",
+        link: "https://www.channelstv.com/2024/04/27/resident-doctors-at-delta-state-university-teaching-hospital-start-warning-strike/",
+      },
+      {
+        title: "2025 Warning Strike",
+        link: "https://www.channelstv.com/2025/05/23/delsuth-resident-doctors-begin-5-day-warning-strike-over-poor-conditions/",
+      },
+      {
+        title: "2025 3rd OGM Communiqué - Channel TV",
+        link: "https://www.channelstv.com/2025/09/23/delsuth-resident-doctors-decry-poor-welfare-lack-of-equipment-threaten-industrial-action/",
+      },
+      {
+        title: "2025 3rd OGM Communiqué - Whistler",
+        link: "https://www.google.com/amp/s/thewhistler.ng/delta-doctors-decry-poor-welfare-threaten-strike/amp/",
+      },
+      {
+        title: "2025 3rd OGM Communiqué - DailyPost",
+        link: "https://dailypost.ng/2025/09/23/delsuth-resident-doctors-threaten-strike-over-poor-welfare-others/",
+      },
+    ],
+  },
+]
+
 export const resources = [
   {
     title: "Newsletter",
@@ -352,16 +445,12 @@ export const resources = [
     target: "_blank"
   },
   {
-    title: "Events",
-    link: "/events"
-  },
-  {
     title: "Webinars",
-    link: "/webinars"
+    link: ""
   },
   {
     title: "Testimonials",
-    link: "/testimonials" 
+    link: "#testimonial" 
   },
 ];
 
@@ -531,8 +620,7 @@ export const EXECUTIVES = [
     dept: "Dept. of Anaesthesia & Int. Care",
     phone: "+234-816-910-6477",
     email: "maestrodr26@gmail.com",
-    avatar:
-      "https://api.dicebear.com/7.x/initials/svg?seed=Aghogho+Ufomata+Isaac",
+    avatar: "/assets/images/execs/president.jpg",
   },
   {
     name: "Dr Ejiroghene Onomrefeduvwu",
@@ -548,8 +636,7 @@ export const EXECUTIVES = [
     dept: "Dept. of Internal Medicine",
     phone: "+234-706-732-0523",
     email: "oreinwachuku@gmail.com",
-    avatar:
-      "https://api.dicebear.com/7.x/initials/svg?seed=Ogochuku+Jude+Nwachuku",
+    avatar: "/assets/images/execs/gen_sec.jpg",
   },
   {
     name: "Dr Benedict Akporubare",
@@ -557,8 +644,7 @@ export const EXECUTIVES = [
     dept: "",
     phone: "+234-810-264-1117",
     email: "akposben1010@gmail.com",
-    avatar:
-      "https://api.dicebear.com/7.x/initials/svg?seed=Benedict+Akporubare",
+    avatar: "/assets/images/execs/ast_gen_sec.jpg",
   },
   {
     name: "Dr Emoefe Sylvester Imonioro",
@@ -566,8 +652,7 @@ export const EXECUTIVES = [
     dept: "Dept. of Internal Medicine",
     phone: "+234-903-260-3681",
     email: "emysly44@gmail.com",
-    avatar:
-      "https://api.dicebear.com/7.x/initials/svg?seed=Emoefe+Sylvester+Imonioro",
+    avatar: "/assets/images/execs/fin_sec.jpg",
   },
   {
     name: "Dr Solomon Obinna Egede",
@@ -575,8 +660,7 @@ export const EXECUTIVES = [
     dept: "Dept. of Surgery",
     phone: "+234-803-926-8078",
     email: "egedeobisolo900@gmail.com",
-    avatar:
-      "https://api.dicebear.com/7.x/initials/svg?seed=Solomon+Obinna+Egede",
+    avatar: "/assets/images/execs/treasurer.jpg",
   },
   {
     name: "Dr Chijioke Peter Asogwa",
@@ -584,8 +668,7 @@ export const EXECUTIVES = [
     dept: "Dept. of Paediatrics",
     phone: "+234-903-457-3318",
     email: "chijiokepeterasogwa@gmail.com",
-    avatar:
-      "https://api.dicebear.com/7.x/initials/svg?seed=Chijioke+Peter+Asogwa",
+    avatar: "/assets/images/execs/pro.jpg",
   },
   {
     name: "Dr Erhire Clinton Umukoro",
@@ -593,8 +676,7 @@ export const EXECUTIVES = [
     dept: "Dept. of Anaesthesia & Int. Care",
     phone: "+234-803-878-2516",
     email: "erhire@gmail.com",
-    avatar:
-      "https://api.dicebear.com/7.x/initials/svg?seed=Erhire+Clinton+Umukoro",
+    avatar: "/assets/images/execs/social.jpg",
   },
   {
     name: "Dr Chukwura Udoka",
@@ -602,7 +684,7 @@ export const EXECUTIVES = [
     dept: "Dept. of Radiology",
     phone: "+234-816-500-7823",
     email: "koopaworkz@gmail.com",
-    avatar: "https://api.dicebear.com/7.x/initials/svg?seed=Chukwura+Udoka",
+    avatar: "/assets/images/execs/academic.jpg",
   },
   {
     name: "Dr Abraham Ogatulu Ikuni",
@@ -610,8 +692,7 @@ export const EXECUTIVES = [
     dept: "",
     phone: "+234-808-018-7445",
     email: "abrahamogatulu@gmail.com",
-    avatar:
-      "https://api.dicebear.com/7.x/initials/svg?seed=Abraham+Ogatulu+Ikuni",
+    avatar: "/assets/images/execs/sports.jpg",
   },
   {
     name: "Dr Oghenetega David Ejeheri",
@@ -619,8 +700,7 @@ export const EXECUTIVES = [
     dept: "Dept. of Surgery",
     phone: "+234-803-426-3408",
     email: "ejeheritega@gmail.com",
-    avatar:
-      "https://api.dicebear.com/7.x/initials/svg?seed=Oghenetega+David+Ejeheri",
+    avatar: "/assets/images/execs/ex_off_1.jpg",
   },
   {
     name: "Dr Fred Oghenekparovwe Abuye",
@@ -628,7 +708,15 @@ export const EXECUTIVES = [
     dept: "",
     phone: "+234-810-075-8550",
     email: "leonardofredinho@gmail.com",
+    avatar: "/assets/images/execs/HO_rep.jpg",
+  },
+  {
+    name: "Peter Ekavwo Esq, LL.M",
+    role: "LEGAL ADVISER",
+    dept: "Principal Attorney, Advocare Populi Law Firm",
+    phone: "+234-803-855-0265",
+    email: "peterekavwo@nigerianbar.ng",
     avatar:
-      "https://api.dicebear.com/7.x/initials/svg?seed=Fred+Oghenekparovwe+Abuye",
+      "https://api.dicebear.com/7.x/initials/svg?seed=Peter+Ekavwo",
   },
 ];
