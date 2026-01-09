@@ -38,7 +38,7 @@ const useCountUp = (end, duration = 2) => {
   return { ref, controls };
 };
 
-function AnimatedStat({ end, label, icon, color, duration = 1.8 }) {
+function AnimatedStat({ end, label, icon, color, duration = 1.8,  }) {
   const nodeRef = useRef();
   const [value, setValue] = React.useState(0);
   const controls = useAnimation();
@@ -68,6 +68,7 @@ function AnimatedStat({ end, label, icon, color, duration = 1.8 }) {
 
   return (
     <motion.div
+    
       ref={nodeRef}
       className="bg-white shadow-xl rounded-2xl p-7 flex flex-col items-center stat-card"
       initial={{ opacity: 0, y: 50, scale: 0.98 }}
@@ -101,54 +102,34 @@ function AnimatedStat({ end, label, icon, color, duration = 1.8 }) {
 
 // List of stats for animated cards
 const achievementsStats = [
-  // {
-  //   end: 2020,
-  //   label: "Hosted the NARD National Convention",
-  //   icon: "ph:trophy-duotone",
-  //   color: "#f59e42",
-  // },
   {
     end: 3,
     label: "NARD National Executive Positions Secured",
     icon: "material-symbols:leaderboard",
     color: "#3b82f6",
+    id: 'convention',
   },
-  // {
-  //   end: 2013,
-  //   label: "Universal Healthcare Coverage for Hospital Staff",
-  //   icon: "mdi:account-heart",
-  //   color: "#ef4444",
-  // },
   {
     end: '2017',
     label: "Facilitated Neurosurgery Unit",
     icon: "icon-park-outline:brain",
     color: "#a855f7",
+    id: 'neurosurgery',
   },
   {
     end: 25,
     label: "Secured 25% COVID-19 Frontline Allowance",
     icon: "mdi:shield-outline",
     color: "#06b6d4",
+    id: 'covid19',
   },
-  // {
-  //   end: 2023,
-  //   label: "Modern Medical Staff Residences Approved",
-  //   icon: "material-symbols:location-home",
-  //   color: "#10b981",
-  // },
   {
     end: 95,
     label: "95 New Nursing Staff Hired",
     icon: "mdi:stethoscope",
     color: "#eab308",
+    id: 'nursing',
   },
-  // {
-  //   end: 2023,
-  //   label: "Advocated For Medical Staff Security",
-  //   icon: "material-symbols:safety-check-rounded",
-  //   color: "#6366f1",
-  // },
 ];
 
 
@@ -365,10 +346,7 @@ export default function Home() {
       </section>
 
       {/* Achievements / Stats Section */}
-      <section
-        id="achievements"
-        className="py-16 "
-      >
+      <section id="achievements" className="py-16 ">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             className="text-center mb-12"
@@ -377,47 +355,41 @@ export default function Home() {
             transition={{ duration: 0.7 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-3xl font-bold mb-4">
-              Our Achievements
-            </h2>
+            <h2 className="text-3xl font-bold mb-4">Our Achievements</h2>
             <div className="w-20 h-1 bg-blue-600 mx-auto mb-4"></div>
-           
           </motion.div>
 
           {/* Animated Stats Cards */}
           <div className="grid gap-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
             {achievementsStats.map((stat, i) => (
-              <AnimatedStat
-                key={i}
-                end={stat.end}
-                label={stat.label}
-                icon={stat.icon}
-                color={stat.color}
-                duration={1.6 + 0.2 * (i % 2)}
-              />
+              <Link key={i} href={`/about-us/achievements#${stat.id}`}>
+                <div className="cursor-pointer">
+                  <AnimatedStat
+                    end={stat.end}
+                    label={stat.label}
+                    icon={stat.icon}
+                    color={stat.color}
+                    duration={1.6 + 0.2 * (i % 2)}
+                  />
+                </div>
+              </Link>
             ))}
           </div>
-{/* 
-          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10 mt-14">
-            {achievementsDescriptions.map((ach, idx) => (
-              <motion.div
-                key={ach.title}
-                className="bg-gray-50 rounded-2xl p-6 shadow group/achieve flex flex-col"
-                initial={{ opacity: 0, y: 40 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 0.08 * idx }}
-                viewport={{ once: true }}
-              >
-                <div className="font-bold text-blue-900 text-lg mb-2 leading-snug">
-                  {ach.title}
-                </div>
-                <div className="text-gray-700 leading-relaxed">
-                  {ach.desc}
-                </div>
-              </motion.div>
-            ))}
-          </div> */}
         </div>
+        <motion.div
+          className="text-center !mt-12 block mx-auto "
+          variants={fadeUp}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+        >
+          <Link
+            href={"/about-us/achievements"}
+            className="btn_link max-800:!w-full !py-[20px] !px-[40px] !mt-3 !mb-5 !text-white bg-primary-100 hover:bg-primary-200 rounded-[2em]"
+          >
+            Learn More
+          </Link>
+        </motion.div>
       </section>
 
       <section id="activities" className="py-16">

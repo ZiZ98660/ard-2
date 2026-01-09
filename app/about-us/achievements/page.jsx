@@ -9,7 +9,8 @@ const achievements = [
       "In 2020, ARD DELSUTH proudly hosted the National Association of Resident Doctors Annual General Meeting, placing Delta State at the forefront of Nigeria's medical community.",
       "This landmark event brought together resident doctors from across the nation and was graced by His Excellency, the Governor of Delta State, alongside two former Governors.",
       "The convention resulted in ARD DELSUTH members being elected to key national positions, including NARD President, Secretary General, and Treasurer—a testament to our leadership in advancing healthcare excellence nationwide."
-    ]
+    ],
+    id: 'convention'
   },
   {
     title: "Universal Healthcare Coverage for Hospital Staff",
@@ -17,15 +18,17 @@ const achievements = [
       "In 2013, we achieved a groundbreaking milestone by securing government approval for free healthcare coverage for all hospital staff.",
       "This initiative ensures that those who dedicate their lives to caring for others have access to quality medical care for themselves and their families.",
       "It represents our unwavering commitment to the welfare of healthcare workers and sets a standard for employee benefits in the medical sector."
-    ]
+    ],
+    id: 'coverage'
   },
   {
-    title: "Establishing the DELSUTH Neurosurgery Unit",
+    title: "Facilitating the DELSUTH Neurosurgery Unit",
     points: [
       "Through persistent advocacy in 2017, we successfully championed the employment of a neurosurgeon, leading to the establishment of DELSUTH's first Neurosurgery Unit.",
       "This achievement expanded access to life-saving specialized care for citizens of Delta State, eliminating the need for patients to travel long distances for neurosurgical interventions.",
       "Today, this unit continues to provide critical care to patients across the region."
-    ]
+    ],
+    id: 'neurosurgery'
   },
   {
     title: "COVID-19 Frontline Recognition",
@@ -49,7 +52,8 @@ const achievements = [
       "Recognizing the critical need for adequate nursing staff, we secured approval in 2023 for the employment of 95 new nurses.",
       "This significant expansion of our healthcare workforce directly translates to improved patient care, reduced waiting times, and enhanced service delivery across all departments.",
       "It demonstrates our commitment to comprehensive healthcare strengthening beyond just physician welfare."
-    ]
+    ],
+    id: 'nursing'
   },
   {
     title: "Championing Safety and Security",
@@ -79,7 +83,7 @@ const Achievements = () => {
         <div>
           <div className="misson-p gap-y-6">
             {achievements.map((achievement, idx) => (
-              <div key={achievement.title} className="mb-4">
+              <div id = {achievement.id} key={achievement.title} className="mb-4">
                 <div className="flex items-center gap-x-2 mb-2">
                   <DotIcon
                     className="!inline !mb-[3.5px] !mr-[5px]"

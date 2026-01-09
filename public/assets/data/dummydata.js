@@ -342,7 +342,7 @@ export const link = [
   },
   {
     title: "Achievements",
-    link: "/about-us/acheivements",
+    link: "#achievements",
   },
   {
     title: "Our Ex-Cos",
