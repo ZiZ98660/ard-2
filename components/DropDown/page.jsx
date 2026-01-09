@@ -8,7 +8,17 @@ import Link from "next/link";
  * @param {Object} props
  * @param {Array<{ title: string, link: string }>} props.options - Array of dropdown options
  */
-const DropDown = ({ options = [], title }) => {
+const DropDown = ({ options = [], title, activeLink }) => {
+  // Find if any option or its children (submenus) matches activeLink
+  function isOptionActive(option) {
+    if (option.link && option.link === activeLink) return true;
+    if (option.children) {
+      return option.children.some(child => child.link === activeLink);
+    }
+    return false;
+  }
+  const isActiveDropdown = options.some(isOptionActive);
+
   const [isOpen, setIsOpen] = useState(false);
   const [activeSubIndex, setActiveSubIndex] = useState(null);
     const dropdownRef = useRef(null);
@@ -73,10 +83,12 @@ const DropDown = ({ options = [], title }) => {
         aria-haspopup="menu"
         aria-expanded={isOpen}
       >
-        <span className="cursor-pointer flex gap-x-2 items-center">
+        <span
+          className={`cursor-pointer flex gap-x-2 items-center${isActiveDropdown ? " activeLink" : ""}`}
+        >
           {title || "Menu"}{" "}
           <svg width="10" height="10" style={{ marginLeft: 4 }}>
-            <polygon points="0,0 10,0 5,7" fill="black" />
+            <polygon points="0,0 10,0 5,7" fill={isActiveDropdown ? '#00dc93' : "black"} />
           </svg>
         </span>
         <div

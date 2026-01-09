@@ -121,7 +121,7 @@ const achievementsStats = [
   // },
   {
     end: '2017',
-    label: "Established Neurosurgery Unit",
+    label: "Facilitated Neurosurgery Unit",
     icon: "icon-park-outline:brain",
     color: "#a855f7",
   },

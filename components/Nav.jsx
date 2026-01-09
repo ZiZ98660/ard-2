@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { TitleLogo } from "./Title";
-import { useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 import React, { useEffect, useState } from "react";
 import { RiMenu4Line } from "react-icons/ri";
 import { AiOutlineClose } from "react-icons/ai";
@@ -29,10 +29,10 @@ const Nav = () => {
 		setIsDropdownOpen(false);
 	};
 
-	const router = useRouter();
+	const pathname = usePathname();
 	useEffect(() => {
-		setActiveLink(router.pathname);
-	}, [router.pathname]);
+		setActiveLink(pathname);
+	}, [pathname]);
 	return (
     <>
       <header>
@@ -63,9 +63,20 @@ const Nav = () => {
               >
                 Home
               </Link>
-              <DropDown options={link} title="About Us" />
-              <DropDown options={news} title="News and Events" />
-              <DropDown options={resources} title="Resources" />
+              {/* Generate proper links for home vs not-home */}
+              <DropDown
+                options={link.map((item) => ({
+                  ...item,
+                  link:
+                    item.link.startsWith("#") && pathname !== "/"
+                      ? `/${item.link}`
+                      : item.link,
+                }))}
+                title="About Us"
+                activeLink={activeLink}
+              />
+              <DropDown options={news} title="News and Events" activeLink={activeLink} />
+              <DropDown options={resources} title="Resources" activeLink={activeLink} />
             </div>
           </nav>
           <button className="button-primary max-800:hidden">contact us</button>

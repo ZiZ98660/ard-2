@@ -1,6 +1,7 @@
 import React from "react";
 import { Title } from "../Title";
 import Text from "../Text";
+import Link from "next/link";
 
 const Form = () => {
 	return (
@@ -10,7 +11,7 @@ const Form = () => {
 					<Title className={"!pb-2"} title={"Get more information"} />
 					<Text
 						text={
-							"Answer a few questions and get more information about the course."
+							"Answer a few questions and get more information about ARD DELSUTH."
 						}
 					/>
 				</div>
@@ -33,9 +34,12 @@ const Form = () => {
 					data as described in our privacy policy. You may opt out of receiving
 					communication at any time.
 				</span>
-				<button className="btn_link max-800:!w-full !py-[10px] !mt-3 !mb-5 !text-white bg-primary-100 hover:bg-primary-200 rounded-[2em] !px-[30px]">
+				<Link 
+				    href = "https://mailchi.mp/f5ba93d7d672/meddigest"
+    				target = "_blank"
+				 className="btn_link max-800:!w-full !py-[10px] !mt-3 !mb-5 !text-white bg-primary-100 hover:bg-primary-200 rounded-[2em] !px-[30px]">
 					Submit
-				</button>
+				</Link>
 			</form>
 		</section>
 	);

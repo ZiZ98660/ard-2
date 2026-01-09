@@ -342,7 +342,7 @@ export const link = [
   },
   {
     title: "Achievements",
-    link: "#achievements",
+    link: "/about-us/acheivements",
   },
   {
     title: "Our Ex-Cos",
@@ -444,9 +444,10 @@ export const resources = [
     link: "https://mailchi.mp/f5ba93d7d672/meddigest",
     target: "_blank"
   },
+ 
   {
-    title: "Webinars",
-    link: ""
+    title: "FAQs",
+    link: "/faqs" 
   },
   {
     title: "Testimonials",
