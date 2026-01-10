@@ -289,8 +289,8 @@ export const card_data = [
   {
     profile: 'dr_edmun.jpg',
     name: 'Dr Edmund Meme',
-    position: 'Non-Executive Vice President',
-    company: 'ARD DELSUTH',
+    position: '',
+    company: '',
     remark: 'I am incredibly grateful to ARD DELSUTH. The association consistently advocated for my welfare, good working conditions and quality training and this helped me grow professionally and personally. Knowing that the association stood firmly behind me gave me confidence and security during my time in DELSUTH. I will forever be grateful to this community. God bless ARD DELSUTH!',
     logo: 'logo.png'
   },
