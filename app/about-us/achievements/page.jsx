@@ -8,61 +8,62 @@ const achievements = [
     points: [
       "In 2020, ARD DELSUTH proudly hosted the National Association of Resident Doctors Annual General Meeting, placing Delta State at the forefront of Nigeria's medical community.",
       "This landmark event brought together resident doctors from across the nation and was graced by His Excellency, the Governor of Delta State, alongside two former Governors.",
-      "The convention resulted in ARD DELSUTH members being elected to key national positions, including NARD President, Secretary General, and Treasurer—a testament to our leadership in advancing healthcare excellence nationwide."
+      "The convention resulted in ARD DELSUTH members being elected to key national positions, including NARD President, Secretary General, and Treasurer—a testament to our leadership in advancing healthcare excellence nationwide.",
     ],
-    id: 'convention'
+    id: "convention",
   },
   {
     title: "Universal Healthcare Coverage for Hospital Staff",
     points: [
       "In 2013, we achieved a groundbreaking milestone by securing government approval for free healthcare coverage for all hospital staff.",
       "This initiative ensures that those who dedicate their lives to caring for others have access to quality medical care for themselves and their families.",
-      "It represents our unwavering commitment to the welfare of healthcare workers and sets a standard for employee benefits in the medical sector."
+      "It represents our unwavering commitment to the welfare of healthcare workers and sets a standard for employee benefits in the medical sector.",
     ],
-    id: 'coverage'
+    id: "coverage",
   },
   {
     title: "Facilitating the DELSUTH Neurosurgery Unit",
     points: [
       "Through persistent advocacy in 2017, we successfully championed the employment of a neurosurgeon, leading to the establishment of DELSUTH's first Neurosurgery Unit.",
       "This achievement expanded access to life-saving specialized care for citizens of Delta State, eliminating the need for patients to travel long distances for neurosurgical interventions.",
-      "Today, this unit continues to provide critical care to patients across the region."
+      "Today, this unit continues to provide critical care to patients across the region.",
     ],
-    id: 'neurosurgery'
+    id: "neurosurgery",
   },
   {
     title: "COVID-19 Frontline Recognition",
     points: [
       "When the global pandemic struck in 2020, we stood firmly with all healthcare workers in Delta State.",
       "Through collaboration with the Nigerian Medical Association, we secured a 25% Basic Consolidated Allowance as hazard inducement for all health workers.",
-      "This recognition honored the courage and sacrifice of frontline workers who risked their lives daily to protect our communities during the nation's health crisis."
-    ]
+      "This recognition honored the courage and sacrifice of frontline workers who risked their lives daily to protect our communities during the nation's health crisis.",
+    ],
+    id: "covid19",
   },
   {
     title: "Modern Residential Facilities for Medical Staff",
     points: [
       "In 2023, we achieved government approval for the construction of new residential buildings for house officers and residents.",
       "These modern accommodations enhance the living conditions of young doctors, allowing them to focus on their training and patient care.",
-      "By investing in quality housing, we're creating an environment that attracts and retains the best medical talent in Delta State."
-    ]
+      "By investing in quality housing, we're creating an environment that attracts and retains the best medical talent in Delta State.",
+    ],
   },
   {
     title: "Strengthening Healthcare Capacity",
     points: [
       "Recognizing the critical need for adequate nursing staff, we secured approval in 2023 for the employment of 95 new nurses.",
       "This significant expansion of our healthcare workforce directly translates to improved patient care, reduced waiting times, and enhanced service delivery across all departments.",
-      "It demonstrates our commitment to comprehensive healthcare strengthening beyond just physician welfare."
+      "It demonstrates our commitment to comprehensive healthcare strengthening beyond just physician welfare.",
     ],
-    id: 'nursing'
+    id: "nursing",
   },
   {
     title: "Championing Safety and Security",
     points: [
       "The safety of our members and the medical community remains paramount.",
       "In 2023, following incidents affecting medical practitioners, we mobilized peaceful advocacy that resulted in reinforced security measures by the Delta State Police Command.",
-      "Through dialogue and responsible action, we've created a safer environment for healthcare workers to serve their communities with confidence and dignity."
-    ]
-  }
+      "Through dialogue and responsible action, we've created a safer environment for healthcare workers to serve their communities with confidence and dignity.",
+    ],
+  },
 ];
 
 const Achievements = () => {

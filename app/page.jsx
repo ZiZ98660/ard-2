@@ -1,25 +1,13 @@
 "use client";
 import React, { useEffect, useRef } from "react";
-import Banner from "@/components/Banner";
-import Expertise from "@/components/Expertise";
-import ShowCase from "@/components/ShowCase";
+
 import Testimonial from "@/components/Testimonial";
-import { Title, TitleLogo, TitleSm } from "@/components/Title";
-import { ACTIVITIES, activities, activities2, home, strategy } from "@/public/assets/data/dummydata";
-import BlogCard from "@/components/BlogCard";
-import Brand from "@/components/FAQs";
-import { Card2, Card3 } from "@/components/Card";
-import Image from "next/image";
-import Text from "@/components/Text";
-import { FaDotCircle } from "react-icons/fa";
-import { DotIcon } from "@/public/assets/icons/icons";
+import { activities2, } from "@/public/assets/data/dummydata";
 import FAQs from "@/components/FAQs";
 import Link from "next/link";
-import Testimonial2 from "@/components/Testimonial copy";
 import Form from "@/components/sections/Form";
 import Head from "next/head";
 import { motion, useAnimation, useInView } from "framer-motion";
-import smoothscroll from "smoothscroll-polyfill";
 import { Icon } from "@iconify/react";
 import Execs, { fadeUp } from "@/components/sections/Execs";
 
@@ -245,7 +233,7 @@ export default function Home() {
               viewport={{ once: true }}
             >
               <img
-                src="http://static.photos/medical/640x360/2"
+                src="/assets/images/doc.jpg"
                 alt="Hospital Building"
                 className="rounded-lg shadow-lg w-full"
               />

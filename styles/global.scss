@@ -409,3 +409,8 @@ footer {
 	padding-block: 4px;
 	padding-inline: 4px;
 }
+
+/* Ensure anchor links scroll past the sticky header */
+[id] {
+	scroll-margin-top: 100px;
+}

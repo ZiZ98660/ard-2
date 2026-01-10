@@ -19,16 +19,7 @@ const Nav = () => {
 	const [isDropdownOpen, setIsDropdownOpen] = React.useState(false);
 	// const { isLoggedin, toggleSideBar } = useBuffStore();
 
-	const openDropDown = () => {
-		setIsDropdownOpen(true);
-	};
-	const toggleDropDown = () => {
-		setIsDropdownOpen(!isDropdownOpen);
-	};
 
-	const closeDropDown = () => {
-		setIsDropdownOpen(false);
-	};
 
 	const pathname = usePathname();
 	useEffect(() => {

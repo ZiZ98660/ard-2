@@ -90,7 +90,7 @@ const DropDown = ({ options = [], title, activeLink, onAnyLinkClick }) => {
       <div
         ref={triggerRef}
         className="dropdown-trigger w-fit h-fit inline-block"
-        style={{ display: "inline-block" }}
+        style={{ display: "inline-block", position: "relative" }}
         tabIndex={0}
         onClick={(e) => {
           // On touch devices, toggle dropdown only on tap (not focus/hover)
@@ -120,7 +120,7 @@ const DropDown = ({ options = [], title, activeLink, onAnyLinkClick }) => {
         </span>
         <div
           ref={dropdownRef}
-          className={`bg-[#effbf3] absolute rounded-md hover:rounded-md z-[11] ${
+          className={`bg-[#effbf3] absolute rounded-md hover:rounded-md z-[100] ${
             isOpen ? styles.open : styles.close
           } ${isTouchDevice ? styles.centralDropdown : ""}`}
           // Graceful CLOSE: set timeout when mouse leaves dropdown, clear on mouse enter
