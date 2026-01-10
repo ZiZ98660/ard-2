@@ -14,6 +14,7 @@ import { link, news, resources } from "@/public/assets/data/dummydata";
 const Nav = () => {
 	const [activeLink, setActiveLink] = useState("");
 	const [open, setOpen] = useState(false);
+	const [isMobile, setIsMobile] = useState(false);
 
 	const [isDropdownOpen, setIsDropdownOpen] = React.useState(false);
 	// const { isLoggedin, toggleSideBar } = useBuffStore();
@@ -33,6 +34,16 @@ const Nav = () => {
 	useEffect(() => {
 		setActiveLink(pathname);
 	}, [pathname]);
+
+	// Detect mobile screen size
+	useEffect(() => {
+		const checkMobile = () => {
+			setIsMobile(window.innerWidth <= 800);
+		};
+		checkMobile();
+		window.addEventListener("resize", checkMobile);
+		return () => window.removeEventListener("resize", checkMobile);
+	}, []);
 	return (
     <>
       <header>
@@ -54,30 +65,68 @@ const Nav = () => {
           >
             <div
               // className="max-[800px]:hidden"
-              className="flex justify-center gap-x-12 max-md:!gap-x-4  max-800:!w-full max-800:!grid max-800:!gap-y-12 max-800:!place-items-center"
+              className="flex justify-center gap-x-12 max-md:!gap-x-4  max-800:!w-full max-800:!grid max-800:!grid-cols-1 max-800:!gap-y-12 max-800:!place-items-center max-800:!justify-items-center"
             >
-              <Link
-                href="/"
-                className={activeLink == "/" ? "activeLink" : "none"}
-                onClick={() => setOpen(false)}
-              >
-                Home
-              </Link>
-              {/* Generate proper links for home vs not-home */}
-              <DropDown
-                options={link.map((item) => ({
-                  ...item,
-                  link:
-                    item.link.startsWith("#") && pathname !== "/"
-                      ? `/${item.link}`
-                      : item.link,
-                }))}
-                title="About Us"
-                activeLink={activeLink}
-                onAnyLinkClick={() => setOpen(false)}
-              />
-              <DropDown options={news} title="News and Events" activeLink={activeLink} onAnyLinkClick={() => setOpen(false)} />
-              <DropDown options={resources} title="Resources" activeLink={activeLink} onAnyLinkClick={() => setOpen(false)} />
+              {isMobile ? (
+                // Mobile navigation - simple links only
+                <>
+                  <Link
+                    href="/"
+                    className={`max-800:!text-center max-800:!justify-self-center ${activeLink == "/" ? "activeLink" : "none"}`}
+                    onClick={() => setOpen(false)}
+                  >
+                    Home
+                  </Link>
+                  <Link
+                    href="/faqs"
+                    className={`max-800:!text-center max-800:!justify-self-center ${activeLink == "/faqs" ? "activeLink" : "none"}`}
+                    onClick={() => setOpen(false)}
+                  >
+                    FAQs
+                  </Link>
+                  <Link
+                    href="/news"
+                    className={`max-800:!text-center max-800:!justify-self-center ${activeLink == "/news" ? "activeLink" : "none"}`}
+                    onClick={() => setOpen(false)}
+                  >
+                    News and Events
+                  </Link>
+                  <Link
+                    href="https://mailchi.mp/f5ba93d7d672/meddigest"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="max-800:!text-center max-800:!justify-self-center"
+                    onClick={() => setOpen(false)}
+                  >
+                    Subscribe to Our Newsletter
+                  </Link>
+                </>
+              ) : (
+                // Desktop navigation - with dropdowns
+                <>
+                  <Link
+                    href="/"
+                    className={activeLink == "/" ? "activeLink" : "none"}
+                    onClick={() => setOpen(false)}
+                  >
+                    Home
+                  </Link>
+                  <DropDown
+                    options={link.map((item) => ({
+                      ...item,
+                      link:
+                        item.link.startsWith("#") && pathname !== "/"
+                          ? `/${item.link}`
+                          : item.link,
+                    }))}
+                    title="About Us"
+                    activeLink={activeLink}
+                    onAnyLinkClick={() => setOpen(false)}
+                  />
+                  <DropDown options={news} title="News and Events" activeLink={activeLink} onAnyLinkClick={() => setOpen(false)} />
+                  <DropDown options={resources} title="Resources" activeLink={activeLink} onAnyLinkClick={() => setOpen(false)} />
+                </>
+              )}
             </div>
           </nav>
           <button className="button-primary max-800:hidden">contact us</button>

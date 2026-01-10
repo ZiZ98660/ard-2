@@ -192,10 +192,7 @@ const DropDown = ({ options = [], title, activeLink, onAnyLinkClick }) => {
                   {/* Render subdropdown if present */}
                   {hasChildren && activeSubIndex === i && (
                     <div
-                        className={`${isTouchDevice ? styles.centralDropdown : "absolute left-full top-0 ml-1"} ${styles.submenu}` }
-                        style={isTouchDevice
-                          ? { width: '100%', position: 'static', left: 0, top: 0, marginLeft: 0, marginTop: 2, boxShadow: '0 4px 18px rgba(10,20,60,0.07)', minWidth: 0, borderRadius: 6, zIndex: 12 }
-                          : { minWidth: 180, zIndex: 12 }}
+                        className={`${isTouchDevice ? `${styles.mobileSubmenu} ${styles.submenu}` : `absolute left-full top-0 ml-1 ${styles.submenu}`}`}
                         onMouseEnter={() => {
                           if (!isTouchDevice && closeTimeoutRef.current) clearTimeout(closeTimeoutRef.current);
                         }}
