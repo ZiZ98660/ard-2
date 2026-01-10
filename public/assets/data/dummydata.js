@@ -371,10 +371,41 @@ export const news = [
         link: "https://youtu.be/nowyVefdfyM?si=UprPeTAB20cPhQ83",
       },
       {
-        title: "See more...",
-        link:'/news',
+        title: "2022 Withheld Salaries Visit",
+        link: "https://youtu.be/m5iFwB-mKng?si=9iwAEHZ_Zcv6XPC2",
       },
-    
+      {
+        title: "2022 AGM Outreach",
+        link: "https://youtu.be/mUW63tWiqtA?si=RaEnfEzCE5smBF-d",
+      },
+      {
+        title: "2023 Police Shooting of Vehicles",
+        link: "https://youtu.be/5TggZqDlxgM?si=xh3wpMhq-44UPxHM",
+      },
+      {
+        title: "2024 Demands",
+        link: "https://youtu.be/dKmy8RnIJhw?si=lnHS1-Q_yHjMIZFy",
+      },
+      {
+        title: "2024 Industrial Action",
+        link: "https://youtu.be/AMv02zos1aQ?si=-KSB607GPCWkngTL",
+      },
+      {
+        title: "2024 Handover Ceremony",
+        link: "https://youtu.be/R44KVzIDJ5I?si=gk-A0rXjEsc75eWl",
+      },
+      {
+        title: "2025 Industrial Action",
+        link: "https://youtu.be/ELP90JYIvyE?si=JwaUDm0LNVex7tBh",
+      },
+      {
+        title: "2025 Industrial Action (Mobile)",
+        link: "https://m.youtube.com/watch?v=lnLWUW_sJDk",
+      },
+      {
+        title: "2025 Industrial Action (Extra)",
+        link: "https://youtu.be/OMeRMU288iY?si=vSPvk6UzARZ2u1WZ",
+      },
     ],
   },
   {
@@ -393,10 +424,17 @@ export const news = [
         link: "https://www.channelstv.com/2025/05/23/delsuth-resident-doctors-begin-5-day-warning-strike-over-poor-conditions/",
       },
       {
-        title: "See more...",
-        link: '/news'
+        title: "2025 3rd OGM Communiqué - Channel TV",
+        link: "https://www.channelstv.com/2025/09/23/delsuth-resident-doctors-decry-poor-welfare-lack-of-equipment-threaten-industrial-action/",
       },
-     
+      {
+        title: "2025 3rd OGM Communiqué - Whistler",
+        link: "https://www.google.com/amp/s/thewhistler.ng/delta-doctors-decry-poor-welfare-threaten-strike/amp/",
+      },
+      {
+        title: "2025 3rd OGM Communiqué - DailyPost",
+        link: "https://dailypost.ng/2025/09/23/delsuth-resident-doctors-threaten-strike-over-poor-welfare-others/",
+      },
     ],
   },
 ];

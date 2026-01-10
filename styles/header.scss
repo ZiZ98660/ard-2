@@ -15,15 +15,15 @@ header {
 }
 .activeLink {
 	position: relative;
-	color: $green;
+	color: #818cf8;
 	&::after {
 		content: "";
 		position: absolute;
-		top: 48px;
-		left: 0;
-		width: 100%;
+		top: 30px;
+		left: 25%;
+		width: 60%;
 		height: 2px;
-		background-color: $green;
+		background-color: #818cf8;
 	}
 }
 

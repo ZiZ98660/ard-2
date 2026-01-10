@@ -106,30 +106,35 @@ const DropDown = ({ options = [], title, activeLink, onAnyLinkClick }) => {
         aria-expanded={isOpen}
       >
         <span
-          className={`cursor-pointer flex gap-x-2 items-center${isActiveDropdown ? " activeLink" : ""}`}
+          className={`cursor-pointer flex gap-x-2 items-center${
+            isActiveDropdown ? " activeLink" : ""
+          }`}
         >
           {title || "Menu"}{" "}
           <svg width="10" height="10" style={{ marginLeft: 4 }}>
-            <polygon points="0,0 10,0 5,7" fill={isActiveDropdown ? '#00dc93' : "black"} />
+            <polygon
+              points="0,0 10,0 5,7"
+              fill={isActiveDropdown ? "#818cf8" : "black"}
+            />
           </svg>
         </span>
         <div
           ref={dropdownRef}
           className={`bg-[#effbf3] absolute rounded-md hover:rounded-md z-[11] ${
             isOpen ? styles.open : styles.close
-          } ${isTouchDevice ? styles.centralDropdown : ''}`}
-            // Graceful CLOSE: set timeout when mouse leaves dropdown, clear on mouse enter
-           onMouseLeave={() => {
-             closeTimeoutRef.current = setTimeout(() => {
-               setIsOpen(false);
-               setActiveSubIndex(null);
-             }, 200); // 200ms grace
-           }}
-           onMouseEnter={() => {
-             if (closeTimeoutRef.current) {
-               clearTimeout(closeTimeoutRef.current);
-             }
-           }}
+          } ${isTouchDevice ? styles.centralDropdown : ""}`}
+          // Graceful CLOSE: set timeout when mouse leaves dropdown, clear on mouse enter
+          onMouseLeave={() => {
+            closeTimeoutRef.current = setTimeout(() => {
+              setIsOpen(false);
+              setActiveSubIndex(null);
+            }, 200); // 200ms grace
+          }}
+          onMouseEnter={() => {
+            if (closeTimeoutRef.current) {
+              clearTimeout(closeTimeoutRef.current);
+            }
+          }}
           // CLOSE the dropdown when focus leaves (keyboard navigation)
           tabIndex={-1}
           onBlur={handleDropdownBlur}
@@ -141,19 +146,20 @@ const DropDown = ({ options = [], title, activeLink, onAnyLinkClick }) => {
                 <div
                   key={i}
                   className={`relative group block`}
-                   onMouseEnter={() => {
-                     if (!isTouchDevice) {
-                       if (closeTimeoutRef.current) clearTimeout(closeTimeoutRef.current);
-                       if (hasChildren) setActiveSubIndex(i);
-                     }
-                   }}
-                   onMouseLeave={() => {
-                     if (!isTouchDevice) {
-                       closeTimeoutRef.current = setTimeout(() => {
-                         if (hasChildren) setActiveSubIndex(null);
-                       }, 200);
-                     }
-                   }}
+                  onMouseEnter={() => {
+                    if (!isTouchDevice) {
+                      if (closeTimeoutRef.current)
+                        clearTimeout(closeTimeoutRef.current);
+                      if (hasChildren) setActiveSubIndex(i);
+                    }
+                  }}
+                  onMouseLeave={() => {
+                    if (!isTouchDevice) {
+                      closeTimeoutRef.current = setTimeout(() => {
+                        if (hasChildren) setActiveSubIndex(null);
+                      }, 200);
+                    }
+                  }}
                 >
                   {option.link ? (
                     <Link
@@ -183,7 +189,11 @@ const DropDown = ({ options = [], title, activeLink, onAnyLinkClick }) => {
                     >
                       {option.title}
                       {hasChildren && (
-                        <svg width="12" height="12" style={{ marginLeft: 8, transform: "rotate(-90deg)" }}>
+                        <svg
+                          width="12"
+                          height="12"
+                          style={{ marginLeft: 8, transform: "rotate(-90deg)" }}
+                        >
                           <polygon points="0,0 12,0 6,7" fill="black" />
                         </svg>
                       )}
@@ -192,17 +202,22 @@ const DropDown = ({ options = [], title, activeLink, onAnyLinkClick }) => {
                   {/* Render subdropdown if present */}
                   {hasChildren && activeSubIndex === i && (
                     <div
-                        className={`${isTouchDevice ? `${styles.mobileSubmenu} ${styles.submenu}` : `absolute left-full top-0 ml-1 ${styles.submenu}`}`}
-                        onMouseEnter={() => {
-                          if (!isTouchDevice && closeTimeoutRef.current) clearTimeout(closeTimeoutRef.current);
-                        }}
-                        onMouseLeave={() => {
-                          if (!isTouchDevice) {
-                            closeTimeoutRef.current = setTimeout(() => {
-                              setActiveSubIndex(null);
-                            }, 200);
-                          }
-                        }}
+                      className={`${
+                        isTouchDevice
+                          ? `${styles.mobileSubmenu} ${styles.submenu}`
+                          : `absolute left-full top-0 ml-1 ${styles.submenu}`
+                      }`}
+                      onMouseEnter={() => {
+                        if (!isTouchDevice && closeTimeoutRef.current)
+                          clearTimeout(closeTimeoutRef.current);
+                      }}
+                      onMouseLeave={() => {
+                        if (!isTouchDevice) {
+                          closeTimeoutRef.current = setTimeout(() => {
+                            setActiveSubIndex(null);
+                          }, 200);
+                        }
+                      }}
                     >
                       {option.children.map((child, j) => (
                         <Link

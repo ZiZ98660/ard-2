@@ -44,6 +44,19 @@ const Nav = () => {
 		window.addEventListener("resize", checkMobile);
 		return () => window.removeEventListener("resize", checkMobile);
 	}, []);
+
+	// Limit news dropdown items to 3 and add "See more..." option
+	const limitedNews = news.map((category) => ({
+		...category,
+		children: [
+			...category.children.slice(0, 3), // Only show first 3 items
+			{
+				title: "See more...",
+				link: "/news",
+				target: "_self"
+			}
+		]
+	}));
 	return (
     <>
       <header>
@@ -72,21 +85,27 @@ const Nav = () => {
                 <>
                   <Link
                     href="/"
-                    className={`max-800:!text-center max-800:!justify-self-center ${activeLink == "/" ? "activeLink" : "none"}`}
+                    className={`max-800:!text-center max-800:!justify-self-center ${
+                      activeLink == "/" ? "activeLink" : "none"
+                    }`}
                     onClick={() => setOpen(false)}
                   >
                     Home
                   </Link>
                   <Link
                     href="/faqs"
-                    className={`max-800:!text-center max-800:!justify-self-center ${activeLink == "/faqs" ? "activeLink" : "none"}`}
+                    className={`max-800:!text-center max-800:!justify-self-center ${
+                      activeLink == "/faqs" ? "activeLink" : "none"
+                    }`}
                     onClick={() => setOpen(false)}
                   >
                     FAQs
                   </Link>
                   <Link
                     href="/news"
-                    className={`max-800:!text-center max-800:!justify-self-center ${activeLink == "/news" ? "activeLink" : "none"}`}
+                    className={`max-800:!text-center max-800:!justify-self-center ${
+                      activeLink == "/news" ? "activeLink" : "none"
+                    }`}
                     onClick={() => setOpen(false)}
                   >
                     News and Events
@@ -120,16 +139,34 @@ const Nav = () => {
                           : item.link,
                     }))}
                     title="About Us"
+                    activeLink={'/about-us'}
+                    onAnyLinkClick={() => setOpen(false)}
+                  />
+                  <DropDown
+                    options={limitedNews}
+                    title="News and Events"
                     activeLink={activeLink}
                     onAnyLinkClick={() => setOpen(false)}
                   />
-                  <DropDown options={news} title="News and Events" activeLink={activeLink} onAnyLinkClick={() => setOpen(false)} />
-                  <DropDown options={resources} title="Resources" activeLink={activeLink} onAnyLinkClick={() => setOpen(false)} />
+                  <DropDown
+                    options={resources}
+                    title="Resources"
+                    activeLink={activeLink}
+                    onAnyLinkClick={() => setOpen(false)}
+                  />
                 </>
               )}
             </div>
           </nav>
-          <button className="button-primary max-800:hidden">contact us</button>
+          <Link
+            href="https://mail.google.com/mail/?view=cm&to=sec.arddelsuth@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="button-primary max-800:hidden">
+              contact us
+            </button>
+          </Link>
           <button
             className=" hidden max-800:block "
             onClick={() => setOpen(!open)}

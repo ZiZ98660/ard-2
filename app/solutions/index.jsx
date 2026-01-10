@@ -197,12 +197,18 @@ export default function SolutionsPage() {
           <div className="flex justify-between h-16">
             <div className="flex items-center">
               <div className="flex-shrink-0 flex items-center">
-                <img className="h-10 w-auto" src="http://static.photos/medical/200x200/1" alt="ARD DELSUTH Logo" />
-                <span className="ml-2 text-xl font-bold text-gray-800">ARD DELSUTH</span>
+                <img
+                  className="h-10 w-auto"
+                  src="http://static.photos/medical/200x200/1"
+                  alt="ARD DELSUTH Logo"
+                />
+                <span className="ml-2 text-xl font-bold text-gray-800">
+                  ARD DELSUTH
+                </span>
               </div>
             </div>
             <div className="hidden md:ml-6 md:flex md:items-center md:space-x-8">
-              {NAV_LINKS.map(link => (
+              {NAV_LINKS.map((link) => (
                 <a
                   key={link.href}
                   href={link.href}
@@ -218,7 +224,7 @@ export default function SolutionsPage() {
                 className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-blue-600 hover:bg-gray-100 focus:outline-none"
                 aria-controls="mobile-menu"
                 aria-expanded={mobileOpen}
-                onClick={() => setMobileOpen(v => !v)}
+                onClick={() => setMobileOpen((v) => !v)}
               >
                 <Icon icon="mdi:menu" width={24} height={24} />
               </button>
@@ -230,14 +236,14 @@ export default function SolutionsPage() {
           {mobileOpen && (
             <motion.div
               initial={{ height: 0, opacity: 0 }}
-              animate={{ height: 'auto', opacity: 1 }}
+              animate={{ height: "auto", opacity: 1 }}
               exit={{ height: 0, opacity: 0 }}
               transition={{ duration: 0.3 }}
               className="md:hidden bg-white shadow-lg overflow-hidden"
               id="mobile-menu"
             >
               <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                {NAV_LINKS.map(link => (
+                {NAV_LINKS.map((link) => (
                   <a
                     key={link.href}
                     href={link.href}
@@ -253,7 +259,10 @@ export default function SolutionsPage() {
       </nav>
 
       {/* Hero Section */}
-      <section id="home" className="pt-24 pb-16 md:pt-32 md:pb-24 gradient-bg text-white">
+      <section
+        id="home"
+        className="pt-24 pb-16 md:pt-32 md:pb-24 gradient-bg text-white"
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="md:flex md:items-center md:justify-between">
             <motion.div
@@ -265,10 +274,12 @@ export default function SolutionsPage() {
               viewport={{ once: true }}
             >
               <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-4">
-                Association of Resident Doctors <span className="text-orange-300">DELSUTH</span>
+                Association of Resident Doctors{" "}
+                <span className="text-orange-300">DELSUTH</span>
               </h1>
               <p className="text-xl mb-8">
-                Advancing medical excellence, welfare, and healthcare in Delta State.
+                Advancing medical excellence, welfare, and healthcare in Delta
+                State.
               </p>
               <div className="flex space-x-4">
                 <a
@@ -278,7 +289,9 @@ export default function SolutionsPage() {
                   Learn More
                 </a>
                 <a
-                  href="#contact"
+                  href="https://mail.google.com/mail/?view=cm&to=sec.arddelsuth@gmail.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="border-2 border-white px-6 py-3 rounded-lg font-medium hover:bg-white hover:text-blue-600 transition-all"
                 >
                   Contact Us
@@ -307,7 +320,9 @@ export default function SolutionsPage() {
       <section id="about" className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12" data-aos="fade-up">
-            <h2 className="text-3xl font-bold text-gray-800 mb-4">About ARD DELSUTH</h2>
+            <h2 className="text-3xl font-bold text-gray-800 mb-4">
+              About ARD DELSUTH
+            </h2>
             <div className="w-20 h-1 bg-blue-600 mx-auto"></div>
           </div>
           <div className="md:flex md:items-center md:space-x-8">
@@ -334,22 +349,35 @@ export default function SolutionsPage() {
               viewport={{ once: true }}
             >
               <p className="text-gray-700 mb-6">
-                The Association of Resident Doctors (ARD) at Delta State University Teaching Hospital (DELSUTH) unites doctors in residency training, along with other doctors of similar ranks and house officers.
+                The Association of Resident Doctors (ARD) at Delta State
+                University Teaching Hospital (DELSUTH) unites doctors in
+                residency training, along with other doctors of similar ranks
+                and house officers.
               </p>
               <p className="text-gray-700 mb-6">
-                Our mission is to advance the welfare of doctors, uphold outstanding residency training, promote efficient hospital operations, and advocate for quality healthcare in Delta State.
+                Our mission is to advance the welfare of doctors, uphold
+                outstanding residency training, promote efficient hospital
+                operations, and advocate for quality healthcare in Delta State.
               </p>
               <p className="text-gray-700 mb-6">
-                We actively engage in policy and collaborate with aligned organizations at the state and national levels to improve health and training outcomes.
+                We actively engage in policy and collaborate with aligned
+                organizations at the state and national levels to improve health
+                and training outcomes.
               </p>
               <div className="flex items-center space-x-4">
                 <div className="bg-blue-100 p-4 rounded-lg">
-                  <Icon icon="mdi:account-group-outline" className="text-blue-600" width={24} height={24} />
+                  <Icon
+                    icon="mdi:account-group-outline"
+                    className="text-blue-600"
+                    width={24}
+                    height={24}
+                  />
                 </div>
                 <div>
                   <h3 className="font-bold text-gray-800">Affiliations</h3>
                   <p className="text-gray-700">
-                    Nigerian Association of Resident Doctors (NARD) &amp; Nigerian Medical Association (NMA)
+                    Nigerian Association of Resident Doctors (NARD) &amp;
+                    Nigerian Medical Association (NMA)
                   </p>
                 </div>
               </div>
@@ -362,10 +390,13 @@ export default function SolutionsPage() {
       <section id="activities" className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12" data-aos="fade-up">
-            <h2 className="text-3xl font-bold text-gray-800 mb-4">Our Activities</h2>
+            <h2 className="text-3xl font-bold text-gray-800 mb-4">
+              Our Activities
+            </h2>
             <div className="w-20 h-1 bg-blue-600 mx-auto"></div>
             <p className="text-gray-600 max-w-3xl mx-auto mt-4">
-              We engage in various activities to promote medical excellence, welfare, and community health.
+              We engage in various activities to promote medical excellence,
+              welfare, and community health.
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -380,10 +411,19 @@ export default function SolutionsPage() {
                 transition={{ duration: 0.5, delay: act.delay / 1000 }}
                 viewport={{ once: true }}
               >
-                <div className={`${act.bg} w-12 h-12 rounded-full flex items-center justify-center mb-4`}>
-                  <Icon icon={act.icon} className={act.iconColor} width={28} height={28} />
+                <div
+                  className={`${act.bg} w-12 h-12 rounded-full flex items-center justify-center mb-4`}
+                >
+                  <Icon
+                    icon={act.icon}
+                    className={act.iconColor}
+                    width={28}
+                    height={28}
+                  />
                 </div>
-                <h3 className="text-xl font-bold text-gray-800 mb-3">{act.title}</h3>
+                <h3 className="text-xl font-bold text-gray-800 mb-3">
+                  {act.title}
+                </h3>
                 <p className="text-gray-700">{act.desc}</p>
               </motion.div>
             ))}
@@ -395,10 +435,13 @@ export default function SolutionsPage() {
       <section id="executives" className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12" data-aos="fade-up">
-            <h2 className="text-3xl font-bold text-gray-800 mb-4">Executive Council</h2>
+            <h2 className="text-3xl font-bold text-gray-800 mb-4">
+              Executive Council
+            </h2>
             <div className="w-20 h-1 bg-blue-600 mx-auto"></div>
             <p className="text-gray-600 max-w-3xl mx-auto mt-4">
-              Meet our dedicated team leading the Association of Resident Doctors at DELSUTH
+              Meet our dedicated team leading the Association of Resident
+              Doctors at DELSUTH
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -414,29 +457,45 @@ export default function SolutionsPage() {
                 viewport={{ once: true }}
               >
                 <div className="flex items-center mb-4">
-                  <img src={ex.img} alt={ex.name} className="w-16 h-16 rounded-full object-cover mr-4" />
+                  <img
+                    src={ex.img}
+                    alt={ex.name}
+                    className="w-16 h-16 rounded-full object-cover mr-4"
+                  />
                   <div>
                     <h3 className="font-bold text-gray-800">{ex.name}</h3>
                     <p className="text-blue-600 text-sm">{ex.role}</p>
                   </div>
                 </div>
                 <p className="text-gray-700 mb-2">
-                  <Icon icon="mdi:briefcase-outline" className="w-4 h-4 inline mr-2" />
+                  <Icon
+                    icon="mdi:briefcase-outline"
+                    className="w-4 h-4 inline mr-2"
+                  />
                   {ex.dept}
                 </p>
                 <p className="text-gray-700 mb-2">
-                  <Icon icon="mdi:phone-outline" className="w-4 h-4 inline mr-2" />
+                  <Icon
+                    icon="mdi:phone-outline"
+                    className="w-4 h-4 inline mr-2"
+                  />
                   {ex.phone}
                 </p>
                 <p className="text-gray-700">
-                  <Icon icon="mdi:email-outline" className="w-4 h-4 inline mr-2" />
+                  <Icon
+                    icon="mdi:email-outline"
+                    className="w-4 h-4 inline mr-2"
+                  />
                   {ex.email}
                 </p>
               </motion.div>
             ))}
           </div>
           <div className="text-center mt-12" data-aos="fade-up">
-            <a href="#" className="inline-flex items-center text-blue-600 font-medium hover:text-blue-800">
+            <a
+              href="#"
+              className="inline-flex items-center text-blue-600 font-medium hover:text-blue-800"
+            >
               View Full Executive List
               <Icon icon="mdi:chevron-right" className="ml-1 w-5 h-5" />
             </a>
@@ -448,10 +507,13 @@ export default function SolutionsPage() {
       <section id="contact" className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12" data-aos="fade-up">
-            <h2 className="text-3xl font-bold text-gray-800 mb-4">Contact Us</h2>
+            <h2 className="text-3xl font-bold text-gray-800 mb-4">
+              Contact Us
+            </h2>
             <div className="w-20 h-1 bg-blue-600 mx-auto"></div>
             <p className="text-gray-600 max-w-3xl mx-auto mt-4">
-              Get in touch with the ARD DELSUTH team for inquiries, collaborations, or support.
+              Get in touch with the ARD DELSUTH team for inquiries,
+              collaborations, or support.
             </p>
           </div>
           <div className="md:flex md:space-x-8">
@@ -464,21 +526,35 @@ export default function SolutionsPage() {
               viewport={{ once: true }}
             >
               <div className="bg-white p-6 rounded-lg shadow-md">
-                <h3 className="text-xl font-bold text-gray-800 mb-4">Contact Information</h3>
+                <h3 className="text-xl font-bold text-gray-800 mb-4">
+                  Contact Information
+                </h3>
                 <div className="flex items-start mb-4">
                   <div className="bg-blue-100 p-3 rounded-full mr-4">
-                    <Icon icon="mdi:map-marker-outline" className="text-blue-600" width={20} height={20} />
+                    <Icon
+                      icon="mdi:map-marker-outline"
+                      className="text-blue-600"
+                      width={20}
+                      height={20}
+                    />
                   </div>
                   <div>
                     <h4 className="font-medium text-gray-800">Address</h4>
                     <p className="text-gray-700">
-                      ARD Secretariat, Ground Floor, Auditorium Building, Delta State University Teaching Hospital, Otefe Road, Off Benin-Warri Expressway, Oghara, Delta State, Nigeria.
+                      ARD Secretariat, Ground Floor, Auditorium Building, Delta
+                      State University Teaching Hospital, Otefe Road, Off
+                      Benin-Warri Expressway, Oghara, Delta State, Nigeria.
                     </p>
                   </div>
                 </div>
                 <div className="flex items-start mb-4">
                   <div className="bg-orange-100 p-3 rounded-full mr-4">
-                    <Icon icon="mdi:phone-outline" className="text-orange-600" width={20} height={20} />
+                    <Icon
+                      icon="mdi:phone-outline"
+                      className="text-orange-600"
+                      width={20}
+                      height={20}
+                    />
                   </div>
                   <div>
                     <h4 className="font-medium text-gray-800">Phone</h4>
@@ -487,7 +563,12 @@ export default function SolutionsPage() {
                 </div>
                 <div className="flex items-start mb-4">
                   <div className="bg-green-100 p-3 rounded-full mr-4">
-                    <Icon icon="mdi:email-outline" className="text-green-600" width={20} height={20} />
+                    <Icon
+                      icon="mdi:email-outline"
+                      className="text-green-600"
+                      width={20}
+                      height={20}
+                    />
                   </div>
                   <div>
                     <h4 className="font-medium text-gray-800">Email</h4>
@@ -496,17 +577,26 @@ export default function SolutionsPage() {
                 </div>
                 <div className="flex items-start">
                   <div className="bg-purple-100 p-3 rounded-full mr-4">
-                    <Icon icon="mdi:clock-outline" className="text-purple-600" width={20} height={20} />
+                    <Icon
+                      icon="mdi:clock-outline"
+                      className="text-purple-600"
+                      width={20}
+                      height={20}
+                    />
                   </div>
                   <div>
-                    <h4 className="font-medium text-gray-800">Operating Hours</h4>
-                    <p className="text-gray-700">8 am to 4 pm, Monday to Friday</p>
+                    <h4 className="font-medium text-gray-800">
+                      Operating Hours
+                    </h4>
+                    <p className="text-gray-700">
+                      8 am to 4 pm, Monday to Friday
+                    </p>
                   </div>
                 </div>
                 <div className="mt-6">
                   <h4 className="font-medium text-gray-800 mb-3">Follow Us</h4>
                   <div className="flex space-x-4">
-                    {SOCIALS.map(soc => (
+                    {SOCIALS.map((soc) => (
                       <a
                         key={soc.icon}
                         href={soc.href}
@@ -528,15 +618,20 @@ export default function SolutionsPage() {
               viewport={{ once: true }}
             >
               <div className="bg-white p-6 rounded-lg shadow-md">
-                <h3 className="text-xl font-bold text-gray-800 mb-4">Send Us a Message</h3>
+                <h3 className="text-xl font-bold text-gray-800 mb-4">
+                  Send Us a Message
+                </h3>
                 <form
-                  onSubmit={e => {
+                  onSubmit={(e) => {
                     e.preventDefault();
                     // You can add form handling logic here
                   }}
                 >
                   <div className="mb-4">
-                    <label htmlFor="name" className="block text-gray-700 font-medium mb-2">
+                    <label
+                      htmlFor="name"
+                      className="block text-gray-700 font-medium mb-2"
+                    >
                       Name
                     </label>
                     <input
@@ -546,7 +641,10 @@ export default function SolutionsPage() {
                     />
                   </div>
                   <div className="mb-4">
-                    <label htmlFor="email" className="block text-gray-700 font-medium mb-2">
+                    <label
+                      htmlFor="email"
+                      className="block text-gray-700 font-medium mb-2"
+                    >
                       Email
                     </label>
                     <input
@@ -556,7 +654,10 @@ export default function SolutionsPage() {
                     />
                   </div>
                   <div className="mb-4">
-                    <label htmlFor="subject" className="block text-gray-700 font-medium mb-2">
+                    <label
+                      htmlFor="subject"
+                      className="block text-gray-700 font-medium mb-2"
+                    >
                       Subject
                     </label>
                     <input
@@ -566,7 +667,10 @@ export default function SolutionsPage() {
                     />
                   </div>
                   <div className="mb-4">
-                    <label htmlFor="message" className="block text-gray-700 font-medium mb-2">
+                    <label
+                      htmlFor="message"
+                      className="block text-gray-700 font-medium mb-2"
+                    >
                       Message
                     </label>
                     <textarea
@@ -594,20 +698,30 @@ export default function SolutionsPage() {
           <div className="md:flex md:justify-between md:items-center">
             <div className="mb-6 md:mb-0">
               <div className="flex items-center">
-                <img className="h-8 w-auto" src="http://static.photos/medical/200x200/1" alt="ARD DELSUTH Logo" />
+                <img
+                  className="h-8 w-auto"
+                  src="http://static.photos/medical/200x200/1"
+                  alt="ARD DELSUTH Logo"
+                />
                 <span className="ml-2 text-xl font-bold">ARD DELSUTH</span>
               </div>
               <p className="mt-2 text-gray-400">
-                Advancing medical excellence, welfare, and healthcare in Delta State.
+                Advancing medical excellence, welfare, and healthcare in Delta
+                State.
               </p>
             </div>
             <div className="grid grid-cols-2 gap-8 sm:grid-cols-3">
               <div>
-                <h3 className="text-sm font-semibold uppercase tracking-wider">Quick Links</h3>
+                <h3 className="text-sm font-semibold uppercase tracking-wider">
+                  Quick Links
+                </h3>
                 <ul className="mt-4 space-y-2">
-                  {NAV_LINKS.map(link => (
+                  {NAV_LINKS.map((link) => (
                     <li key={link.href}>
-                      <a href={link.href} className="text-gray-400 hover:text-white transition-all">
+                      <a
+                        href={link.href}
+                        className="text-gray-400 hover:text-white transition-all"
+                      >
                         {link.label}
                       </a>
                     </li>
@@ -615,22 +729,32 @@ export default function SolutionsPage() {
                 </ul>
               </div>
               <div>
-                <h3 className="text-sm font-semibold uppercase tracking-wider">Legal</h3>
+                <h3 className="text-sm font-semibold uppercase tracking-wider">
+                  Legal
+                </h3>
                 <ul className="mt-4 space-y-2">
                   <li>
-                    <a href="#" className="text-gray-400 hover:text-white transition-all">
+                    <a
+                      href="#"
+                      className="text-gray-400 hover:text-white transition-all"
+                    >
                       Privacy Policy
                     </a>
                   </li>
                   <li>
-                    <a href="#" className="text-gray-400 hover:text-white transition-all">
+                    <a
+                      href="#"
+                      className="text-gray-400 hover:text-white transition-all"
+                    >
                       Terms of Service
                     </a>
                   </li>
                 </ul>
               </div>
               <div>
-                <h3 className="text-sm font-semibold uppercase tracking-wider">Banking</h3>
+                <h3 className="text-sm font-semibold uppercase tracking-wider">
+                  Banking
+                </h3>
                 <ul className="mt-4 space-y-2">
                   <li className="text-gray-400">Zenith Bank</li>
                   <li className="text-gray-400">1017294750</li>
@@ -639,11 +763,17 @@ export default function SolutionsPage() {
             </div>
           </div>
           <div className="mt-8 pt-8 border-t border-gray-700 flex flex-col md:flex-row justify-between items-center">
-            <p className="text-gray-400 text-sm">© 2023 ARD DELSUTH. All rights reserved.</p>
+            <p className="text-gray-400 text-sm">
+              © 2023 ARD DELSUTH. All rights reserved.
+            </p>
             <div className="mt-4 md:mt-0">
               <p className="text-gray-400 text-sm">
-                Designed with{' '}
-                <Icon icon="mdi:heart" className="w-4 h-4 inline text-red-500" /> for medical excellence
+                Designed with{" "}
+                <Icon
+                  icon="mdi:heart"
+                  className="w-4 h-4 inline text-red-500"
+                />{" "}
+                for medical excellence
               </p>
             </div>
           </div>
@@ -660,7 +790,7 @@ export default function SolutionsPage() {
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 0.7 }}
             transition={{ duration: 0.3 }}
-            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
             aria-label="Back to top"
           >
             <Icon icon="mdi:arrow-up" className="w-5 h-5" />
