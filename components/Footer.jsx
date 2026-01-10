@@ -87,7 +87,7 @@ const Footer = () => {
                   <Link href="/news">News and Events</Link>
                 </li>
                 <li>
-                  <Link href="/">Testimonials</Link>
+                  <Link href="#testimonial">Testimonials</Link>
                 </li>
               </ul>
               <ul>
