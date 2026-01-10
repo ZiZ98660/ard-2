@@ -158,15 +158,19 @@ const Nav = () => {
               )}
             </div>
           </nav>
-          <Link
-            href="https://mail.google.com/mail/?view=cm&to=sec.arddelsuth@gmail.com"
+        <a
+          href={
+            typeof window !== "undefined" && /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent)
+              ? "googlegmail:///co?to=sec.arddelsuth@gmail.com"
+              : "https://mail.google.com/mail/?view=cm&to=sec.arddelsuth@gmail.com"
+          }
             target="_blank"
             rel="noopener noreferrer"
           >
             <button className="button-primary max-800:hidden">
               contact us
             </button>
-          </Link>
+          </a>
           <button
             className=" hidden max-800:block "
             onClick={() => setOpen(!open)}

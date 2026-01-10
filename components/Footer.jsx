@@ -49,13 +49,17 @@ const Footer = () => {
                     </Link>
                   </div>
                   <div>
-                    <Link
-                      href="https://mail.google.com/mail/?view=cm&to=sec.arddelsuth@gmail.com"
+                    <a
+                      href={
+                        typeof window !== "undefined" && /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent)
+                          ? "googlegmail:///co?to=sec.arddelsuth@gmail.com"
+                          : "https://mail.google.com/mail/?view=cm&to=sec.arddelsuth@gmail.com"
+                      }
                       target="_blank"
                       rel="noopener noreferrer"
                     >
                       <MailIcon className=" size-8" />
-                    </Link>
+                    </a>
                   </div>
                   <div>
                     <Link
@@ -97,13 +101,17 @@ const Footer = () => {
                   <Link href="/faqs">FAQs</Link>
                 </li>
                 <li>
-                  <Link
-                    href="https://mail.google.com/mail/?view=cm&to=sec.arddelsuth@gmail.com"
+                 <a
+                      href={
+                        typeof window !== "undefined" && /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent)
+                          ? "googlegmail:///co?to=sec.arddelsuth@gmail.com"
+                          : "https://mail.google.com/mail/?view=cm&to=sec.arddelsuth@gmail.com"
+                      }
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     Contact Us
-                  </Link>
+                  </a>
                 </li>
               </ul>
             </div>
