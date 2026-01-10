@@ -50,11 +50,11 @@ const Nav = () => {
           <nav
             className={` flex  ${open ? "openMenu" : "closeMenu"} ${
               !open ? "max-800:!hidden" : ""
-            }`}
+            } max-800:!justify-center max-800:!items-center`}
           >
             <div
               // className="max-[800px]:hidden"
-              className="flex justify-center gap-x-12 max-md:!gap-x-4  max-800:!w-full max-800:!grid max-800:!gap-y-12 max-800:!place-content-center "
+              className="flex justify-center gap-x-12 max-md:!gap-x-4  max-800:!w-full max-800:!grid max-800:!gap-y-12 max-800:!place-items-center"
             >
               <Link
                 href="/"
@@ -74,9 +74,10 @@ const Nav = () => {
                 }))}
                 title="About Us"
                 activeLink={activeLink}
+                onAnyLinkClick={() => setOpen(false)}
               />
-              <DropDown options={news} title="News and Events" activeLink={activeLink} />
-              <DropDown options={resources} title="Resources" activeLink={activeLink} />
+              <DropDown options={news} title="News and Events" activeLink={activeLink} onAnyLinkClick={() => setOpen(false)} />
+              <DropDown options={resources} title="Resources" activeLink={activeLink} onAnyLinkClick={() => setOpen(false)} />
             </div>
           </nav>
           <button className="button-primary max-800:hidden">contact us</button>

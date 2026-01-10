@@ -11,7 +11,7 @@ const Faqs = () => {
       <section className='agency bg-top'>
         <div className='sass-container'>
           <div className='heading-title'>
-            <TitleSm title='FAQs' />
+            <Title className={"text-[32px]"} title="FAQs" />
           </div>
           <div className='desc'>
             <Text

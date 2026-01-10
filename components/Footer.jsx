@@ -78,25 +78,14 @@ const Footer = () => {
                   <Link href="/about-us/what-we-do">What we do</Link>
                 </li>
                 <li>
-                  <Link href="/">Open positions</Link>
+                  <Link href="/about-us/achievements">Achievements</Link>
                 </li>
-                <li>
-                  <Link href="/faqs">FAQs</Link>
-                </li>
-                <li>
-                  <Link href="/">Contact Us</Link>
-                </li>
+                
               </ul>
               <ul>
                 <h3>Resources</h3>
                 <li>
-                  <Link href="/events">Events</Link>
-                </li>
-                <li>
-                  <Link href="/">News</Link>
-                </li>
-                <li>
-                  <Link href="/">Webinars</Link>
+                  <Link href="/news">News and Events</Link>
                 </li>
                 <li>
                   <Link href="/">Testimonials</Link>
@@ -105,10 +94,16 @@ const Footer = () => {
               <ul>
                 <h3>Useful Links</h3>
                 <li>
-                  <Link href="/membership">Membership</Link>
+                  <Link href="/faqs">FAQs</Link>
                 </li>
                 <li>
-                  <Link href="/">Consultancy</Link>
+                  <Link
+                    href="https://mail.google.com/mail/?view=cm&to=sec.arddelsuth@gmail.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Contact Us
+                  </Link>
                 </li>
               </ul>
             </div>

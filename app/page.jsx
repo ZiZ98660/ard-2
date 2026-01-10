@@ -70,7 +70,7 @@ function AnimatedStat({ end, label, icon, color, duration = 1.8,  }) {
     <motion.div
     
       ref={nodeRef}
-      className="bg-white shadow-xl rounded-2xl p-7 flex flex-col items-center stat-card"
+      className="bg-white shadow-xl rounded-2xl p-7 flex flex-col items-center stat-card h-[270px] max-h-[270px] min-h-[270px]"
       initial={{ opacity: 0, y: 50, scale: 0.98 }}
       whileInView={{ opacity: 1, y: 0, scale: 1 }}
       transition={{ type: "spring", damping: 24, stiffness: 160, duration: 0.7 }}
@@ -360,7 +360,7 @@ export default function Home() {
           </motion.div>
 
           {/* Animated Stats Cards */}
-          <div className="grid gap-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+          <div className="grid gap-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 items-stretch">
             {achievementsStats.map((stat, i) => (
               <Link key={i} href={`/about-us/achievements#${stat.id}`}>
                 <div className="cursor-pointer">

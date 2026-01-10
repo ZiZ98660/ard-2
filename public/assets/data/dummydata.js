@@ -352,6 +352,7 @@ export const link = [
 export const news = [
   {
     title: "Videos",
+    // link: '/news',
     children: [
       {
         title: "2015 Industrial Action",
@@ -370,7 +371,7 @@ export const news = [
         link: "https://youtu.be/nowyVefdfyM?si=UprPeTAB20cPhQ83",
       },
       {
-        title: "2022 Head of Service Visit on Withheld Salaries",
+        title: "2022 Withheld Salaries Visit",
         link: "https://youtu.be/m5iFwB-mKng?si=9iwAEHZ_Zcv6XPC2",
       },
       {
@@ -378,7 +379,7 @@ export const news = [
         link: "https://youtu.be/mUW63tWiqtA?si=RaEnfEzCE5smBF-d",
       },
       {
-        title: "2023 Police Shooting of ARD DELSUTH Vehicle",
+        title: "2023 Police Shooting of Vehicles",
         link: "https://youtu.be/5TggZqDlxgM?si=xh3wpMhq-44UPxHM",
       },
       {
@@ -436,7 +437,7 @@ export const news = [
       },
     ],
   },
-]
+];
 
 export const resources = [
   {
