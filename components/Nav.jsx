@@ -139,7 +139,7 @@ const Nav = () => {
                           : item.link,
                     }))}
                     title="About Us"
-                    activeLink={'/about-us'}
+                    activeLink={"/about-us"}
                     onAnyLinkClick={() => setOpen(false)}
                   />
                   <DropDown
@@ -158,12 +158,8 @@ const Nav = () => {
               )}
             </div>
           </nav>
-        <a
-          href={
-            typeof window !== "undefined" && /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent)
-              ? "googlegmail:///co?to=sec.arddelsuth@gmail.com"
-              : "https://mail.google.com/mail/?view=cm&to=sec.arddelsuth@gmail.com"
-          }
+          <a
+            href={"mailto:arddelsuth@gmail.com"}
             target="_blank"
             rel="noopener noreferrer"
           >

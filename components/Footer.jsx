@@ -50,11 +50,7 @@ const Footer = () => {
                   </div>
                   <div>
                     <a
-                      href={
-                        typeof window !== "undefined" && /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent)
-                          ? "googlegmail:///co?to=sec.arddelsuth@gmail.com"
-                          : "https://mail.google.com/mail/?view=cm&to=sec.arddelsuth@gmail.com"
-                      }
+                      href={"mailto:arddelsuth@gmail.com"}
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -84,7 +80,6 @@ const Footer = () => {
                 <li>
                   <Link href="/about-us/achievements">Achievements</Link>
                 </li>
-                
               </ul>
               <ul>
                 <h3>Resources</h3>
@@ -101,12 +96,8 @@ const Footer = () => {
                   <Link href="/faqs">FAQs</Link>
                 </li>
                 <li>
-                 <a
-                      href={
-                        typeof window !== "undefined" && /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent)
-                          ? "googlegmail:///co?to=sec.arddelsuth@gmail.com"
-                          : "https://mail.google.com/mail/?view=cm&to=sec.arddelsuth@gmail.com"
-                      }
+                  <a
+                    href={"mailto:arddelsuth@gmail.com"}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
