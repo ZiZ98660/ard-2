@@ -111,13 +111,22 @@ const Footer = () => {
             <div className="text">
               <span>© 2025 ALL RIGHTS RESERVED.</span>
               <div className="">
-                <img
+                {/* <img
                   className=""
                   loading="lazy"
                   src={"/assets/images/Momentum.png"}
                   alt=""
-                />
-                <span>Powered by Momentum Healthcare Services</span>
+                /> */}
+                <span>
+                  Powered by{" "}
+                  <a
+                    className=" text-[#1b1b1b]  hover:text-[#818cf8]"
+                    href={"https://www.momentumhealthcare.org"}
+                    target="_blank"
+                  >
+                    Momentum Healthcare Services
+                  </a>{" "}
+                </span>
               </div>
             </div>
             <div className="connect">
